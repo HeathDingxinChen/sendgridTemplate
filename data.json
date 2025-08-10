@@ -1,0 +1,157 @@
+{
+  "Email": "heath.dingxin.chen@accenture.cn",
+  "FirstName": "Heath",
+  "LastName": "Chen",
+  "DerivedCountry": null,
+  "DeclaredCountry": null,
+  "LanguageCode": null,
+  "JourneysWCI": null,
+  "BookingInfo": {
+    "HeroBannerPictureUrl": "https://edge.hkexpress.com/media/itineraryemail/Itinerary-email-banner_642x321_tokyo.jpg",
+    "DestinationCity": "Tokyo (Narita)",
+    "DepartDateText": [
+      "2025",
+      "7",
+      "30"
+    ],
+    "hoursDiffBetweenCreationAndDeparture": 1225,
+    "PNR": "S3VCVI",
+    "IsWowPromotion": false,
+    "WowPromotionType": "",
+    "WowPromotionVersion": "0",
+    "IsOneSegmentBooking": false,
+    "ItinerarySegmentInfo": null,
+    "ShowCarbonOffsetFees": true,
+    "IsTwoSegmentBooking": true,
+    "IsThreeSegmentBooking": false,
+    "IsFourSegmentBooking": false,
+    "HideTotalCost": false,
+    "IsHkiaPromo": false,
+    "Fares": "HKD 1680.00",
+    "Fees": "HKD 627.00",
+    "CheckedBaggageFees": "NA",
+    "CarryOnBaggageFees": "NA",
+    "MealsFees": "NA",
+    "SeatFees": "NA",
+    "InsuranceFees": "NA",
+    "ConvenienceFees": "HKD 0.00",
+    "ChangeFees": "NA",
+    "UFirstFees": "NA",
+    "TravelSimFees": "NA",
+    "CarbonOffsetFees": "NA",
+    "SmsFees": "NA",
+    "SportEquipmentFees": "NA",
+    "FuelSurcharge": "HKD 320.00",
+    "SpoilageFee": "NA",
+    "MyUoMemberDiscount": null,
+    "HasFerryRoute": false,
+    "HasBusRoute": false,
+    "TermsAndConditionOfCksUrl": null,
+    "hasHKGArrival": null,
+    "HasPartnersOffer": false,
+    "HasKORoute": null
+  },
+  "FlightInfo": [
+    {
+      "DepartureDateText": "30th Jul",
+      "DepartureDayOfWeek": "Wednesday",
+      "DepartCode": "HKG",
+      "FlightNo": "UO848",
+      "IsFerryRoute": false,
+      "IsBusRoute": false,
+      "ArriveCode": "NRT",
+      "DepartTime": "09:15",
+      "DepartDate": "30 Jul, 2025, Wed",
+      "DepartCity": "Hong Kong International Airport",
+      "DepartureTerminal": "Terminal 1",
+      "DepartOperatedByNote": null,
+      "ArriveTime": "14:45",
+      "ArriveDate": "30 Jul, 2025, Wed",
+      "ArriveCity": "Tokyo Narita International Airport",
+      "ArrivalTerminal": "Terminal 2",
+      "ArriveOperatedByNote": null
+    },
+    {
+      "DepartureDateText": "31st Jul",
+      "DepartureDayOfWeek": "Thursday",
+      "DepartCode": "NRT",
+      "FlightNo": "UO849",
+      "IsFerryRoute": false,
+      "IsBusRoute": false,
+      "ArriveCode": "HKG",
+      "DepartTime": "15:45",
+      "DepartDate": "31 Jul, 2025, Thu",
+      "DepartCity": "Tokyo Narita International Airport",
+      "DepartureTerminal": "Terminal 2",
+      "DepartOperatedByNote": null,
+      "ArriveTime": "19:40",
+      "ArriveDate": "31 Jul, 2025, Thu",
+      "ArriveCity": "Hong Kong International Airport",
+      "ArrivalTerminal": "Terminal 1",
+      "ArriveOperatedByNote": null
+    }
+  ],
+  "HasNGBDestination": null,
+  "Passengers": [
+    {
+      "Title": "Mr",
+      "FirstName": "Heath",
+      "LastName": "Chen",
+      "ItinerarySegmentInfo": [
+        {
+          "TripType": "Departure",
+          "GuestFlightInfo": "UO848",
+          "FareClass": {
+            "FareClassName": "Essential"
+          },
+          "FareOrBookingClass": "U",
+          "Meal": "NA",
+          "Insurance": "NA",
+          "Seat": "NA",
+          "CheckedBaggage": "1 x 20kg baggage (1 piece)",
+          "CarryOnBaggage": "NA",
+          "SportsEquipment": "NA",
+          "UFirst": "NA",
+          "TravelSim": "NA",
+          "CarbonOffset": "NA"
+        },
+        {
+          "TripType": "Return",
+          "GuestFlightInfo": "UO849",
+          "FareClass": {
+            "FareClassName": "Essential"
+          },
+          "FareOrBookingClass": "U",
+          "Meal": "NA",
+          "Insurance": "NA",
+          "Seat": "NA",
+          "CheckedBaggage": "1 x 20kg baggage (1 piece)",
+          "CarryOnBaggage": "NA",
+          "SportsEquipment": "NA",
+          "UFirst": "NA",
+          "TravelSim": "NA",
+          "CarbonOffset": "NA"
+        }
+      ]
+    }
+  ],
+  "PaymentInfo": {
+    "PaymentAmtTotal": "HKD 2627.00",
+    "PaymentDetails": [
+      {
+        "PaymentType": "China UnionPay",
+        "PaymentDate": "09/06/2025 15:29 HK Time",
+        "PaymentAmount": null,
+        "Status": "Approved",
+        "PricingCurrency": "HKD 2627.00",
+        "TransactionCurrency": "HKD 2627.00",
+        "ExchangeRate": null
+      }
+    ]
+  },
+  "ExtrasSSR": null,
+  "InnityBanner": null,
+  "hasSpecialAssistance": null,
+  "hasJtkStation": null,
+  "hasHKGArrival": null
+}
