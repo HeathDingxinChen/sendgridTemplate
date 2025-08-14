@@ -620,25 +620,27 @@ Manage&nbsp;My&nbsp;Booking
                                                           <td class="c-space" style="width:26px">&nbsp;
                                                             </td>
                                                                 <td style="display:inline-flex">
-                                                     <div  style="width:87px;    height: 22px;font-size:16px;padding:0 8px 0 0;font-family:Pluto Sans,'Noto Sans',sans-serif,Arial,Noto;font-weight:700;text-align:left;vertical-align:middle">
+                                                     <div  style="height: 22px;font-size:16px;padding:0 8px 0 0;font-family:Pluto Sans,'Noto Sans',sans-serif,Arial,Noto;font-weight:700;text-align:left;vertical-align:middle">
                                                                   {{this.TripType}}     
                                                      </div>
-                                                                    <div style="width:69px;justify-content: center;align-items: center;display: flex;font-size:12px;font-weight:700;text-align:center;vertical-align:middle;background-color: #E2D5E9;border-radius: 4px;">
+                                                                    <div style="padding: 0 8px;justify-content: center;align-items: center;display: flex;font-size:12px;font-weight:700;text-align:center;vertical-align:middle;background-color: #E2D5E9;border-radius: 4px;">
 <span style="font-weight:700;text-align:center;vertical-align:middle;color: #702B91; ">{{this.FareClassName}}</span>
                                                                     </div>
                                                                 </td> 
-                                                          
+                                                                <td></td>
                                                                                <td 
-                                                                    style="font-size:12px;font-weight:500;text-align:right;vertical-align:right">
-                                                                    Fare Class: {{this.FareOrBookingClass}}
+                                                                    style="font-size:12px;font-weight:500;text-align:right;vertical-align: middle;">
+                                                                    Fare Class: <strong>{{this.FareOrBookingClass}}</strong>
                                                                 </td> 
+                                                                
                                                          </tr>
                                                             <tr>
                                                                 <td class="c-space" style="width:26px">&nbsp;
                                                                 </td>
                                                                 <td class="city departure"
-                                                                    style="font-size:24px;font-weight:500;text-align:left;vertical-align:middle">
-                                                                    {{this.DepartCode}}
+                                                                    style="font-weight:500;text-align:left;vertical-align:middle;color:#702b91">
+                                                                    <div>{{this.DepartTime}}</div>
+                                                                    <div>{{this.DepartCode}}</div>
                                                                 </td>
                                                                 <td class="plane" width="40"
                                                                     style="text-align:center;vertical-align:middle;width:40px">
@@ -654,9 +656,10 @@ Manage&nbsp;My&nbsp;Booking
                                                                     {{/if}}
                                                                     {{this.FlightNo}}
                                                                 </td>
-                                                                <td class="city arrival"
-                                                                    style="font-size:24px;font-weight:500;text-align:right;vertical-align:middle">
-                                                                    {{this.ArriveCode}}
+                                                                <td class="city departure"
+                                                                    style="font-weight:500;text-align:left;vertical-align:middle;color:#702b91;text-align:right">
+                                                                    <div>{{this.ArriveTime}}</div>
+                                                                    <div>{{this.ArriveCode}}</div>
                                                                 </td>
                                                                 <td class="c-space" style="width:26px">&nbsp;
                                                                 </td>
@@ -666,60 +669,54 @@ Manage&nbsp;My&nbsp;Booking
                                                                 </td>
                                                                 <td class="departure" width="275"
                                                                     style="text-align:left;vertical-align: top;">
-<span class="time"
-      style="font-size:16px;font-weight:400;line-height:19.78px">{{this.DepartTime}}</span>
-                                                                    <br>
                                                                     <span class="date"
                                                                           style="font-size:14px;font-weight:400;line-height:25px">{{this.DepartDate}}</span>
                                                                     <br>
                                                                     <span class="airport"
-                                                                          style="font-size:14px;font-weight:500;line-height:25px">
+                                                                          style="font-size:14px;line-height:25px">
                                                                         {{this.DepartCity}}
                                                                     </span>
                                                                     <br>
                                                                     <span class="airport"
-                                                                          style="font-size:14px;font-weight:500;line-height:25px">
+                                                                          style="font-size:14px;line-height:25px">
                                                                         {{this.DepartureTerminal}}
                                                                     </span>
                                                                     <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
                                                                         &nbsp;
                                                                     </p>
-                                                                    {{#or this.IsFerryRoute this.IsBusRoute}}
+                                                                    {{!-- {{#or this.IsFerryRoute this.IsBusRoute}}
                                                                         <p style="font-size:12px;">{{this.DepartOperatedByNote}}
                                                                         </p>
                                                                         <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
                                                                             &nbsp;
                                                                         </p>
-                                                                    {{/or}}
+                                                                    {{/or}} --}}
                                                                 </td>
                                                                 <td class="r-space" style="height:24px">&nbsp;</td>
                                                                 <td class="arrival" width="275"
                                                                     style="text-align:right;vertical-align: top;">
-<span class="time"
-      style="font-size:16px;font-weight:400;line-height:19.78px">{{this.ArriveTime}}</span>
-                                                                    <br>
                                                                     <span class="date"
                                                                           style="font-size:14px;font-weight:400;line-height:25px">{{this.ArriveDate}}</span>
                                                                     <br>
                                                                     <span class="airport"
-                                                                          style="font-size:14px;font-weight:500;line-height:25px">
+                                                                          style="font-size:14px;line-height:25px">
                                                                         {{this.ArriveCity}}
                                                                     </span>
                                                                     <br>
                                                                     <span class="airport"
-                                                                          style="font-size:14px;font-weight:500;line-height:25px">
+                                                                          style="font-size:14px;line-height:25px">
                                                                         {{this.ArrivalTerminal}}
                                                                     </span>
                                                                     <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
                                                                         &nbsp;
                                                                     </p>
-                                                                    {{#or this.IsFerryRoute this.IsBusRoute}}
+                                                                    {{!-- {{#or this.IsFerryRoute this.IsBusRoute}}
                                                                         <p style="font-size:12px;">{{this.ArriveOperatedByNote}}
                                                                         </p>
                                                                         <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
                                                                             &nbsp;
                                                                         </p>
-                                                                    {{/or}}
+                                                                    {{/or}} --}}
                                                                 </td>
                                                                 <td class="c-space" style="width:26px">&nbsp;
                                                                 </td>
@@ -729,7 +726,7 @@ Manage&nbsp;My&nbsp;Booking
                                                                     <td class="c-space" style="width:26px">&nbsp;
                                                                     </td>
                                                                     <td class="line-top" colspan="3"
-                                                                        style="border-top:1px #C3C6CD solid">
+                                                                        style="border-top:1px #666666 dashed">
                                                                         <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
                                                                             &nbsp;
                                                                         </p>
@@ -768,7 +765,7 @@ Manage&nbsp;My&nbsp;Booking
                                 <tr style="background-color:#F3F3F3">
                                     <td class="c-space" style="width:26px">&nbsp;</td>
                                     <td>
-                                        <!-- Booking -->
+                                        <!-- Payment Details -->
                                         <table border="0" cellspacing="0" cellpadding="0" width="590" class="booking"
                                                style="font-family:'Noto Sans',sans-serif,Arial,Noto;background-color:#FFF">
                                             <tr>
@@ -779,13 +776,14 @@ Manage&nbsp;My&nbsp;Booking
                                                         <tr>
                                                             <td class="c-space" style="width:26px">&nbsp;</td>
                                                             <td class="hk-table__header__content"
-                                                                style="height:69px;vertical-align:middle">
+                                                                style="height:69px;vertical-align:middle;display:flex;align-items:center;justify-content:space-between">
+                                                                <div>
                                                                 <img
                                                                         src="https://edge.hkexpress.com/static/HKE-newsletters/icons/new-icon-small-white_user.png"
                                                                         width="28" height="28" border="0"
                                                                         style="display:inline-block;vertical-align:middle">
-                                                                &nbsp;<span
-                                                                    style="font-size:20px;font-weight:500;line-height:25px;">Bookings</span>
+                                                                <span style="font-size:20px;font-weight:500;line-height:25px;">Payment Details</span></div>
+                                                                <div style="font-size:20px;font-weight:500;line-height:25px;">Total cost: {{this.PaymentInfo.PaymentAmtTotal}}</div>
                                                             </td>
                                                             <td class="c-space" style="width:26px">&nbsp;</td>
                                                         </tr>
@@ -839,7 +837,7 @@ Manage&nbsp;My&nbsp;Booking
                                                                                 <tr>
                                                                                     <td><strong
                                                                                             class="hk-table__content__list__title"
-                                                                                            style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{TripType}}</strong>
+                                                                                            style="color:#702B91;display:inline-block;height:35px;font-size:18px;">{{TripType}}</strong>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -1508,21 +1506,84 @@ Type</span><span class="gray-text"
                                                                             <tr>
                                                                                 <td></td>
                                                                             </tr>
+                                                                            {{!-- payment detail info 1 --}}
                                                                             <tr>
-                                                                                <td><strong
-                                                                                        class="hk-table__content__list__title"
-                                                                                        style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{ItinerarySegmentInfo.[0].TripType}}</strong>
+                                                                                <tr>
+                                                                                    <td><strong
+                                                                                            class="hk-table__content__list__title"
+                                                                                            style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{PaymentDetailsInfo.[0].TripType}}</strong>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fare</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].Fare}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fuel Surcharge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].FuelSurcharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Airport Construction Fee</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].AirportConstructionFee}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HK Air Passenger Departure Tax</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].HKAirPassengerDepartureTax}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HKG Security Charge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].HKGSecurityCharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Carry On Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[0].CarryOnBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].CarryOnBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Checked Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[0].CheckedBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].CheckedBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Sport Equipment</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].SportEquipment}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Seat Selection: 
+                                                                                            {{#each PaymentDetailsInfo.[0].SeatSelection.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].SeatSelection.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">U-First</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].UFirst}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Meals: 
+                                                                                            {{#each PaymentDetailsInfo.[0].Meals.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].Meals.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Travel Data Sim Card</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[0].TravelDataSimCard}}</div>
                                                                                 </td>
                                                                             </tr>
-                                                                            <tr>
-                                                                                <td style="padding-left: 6px"><span
-                                                                                        style="font-size:14px;font-weight:300;height:25px;display:inline-block;">Flight
-Number</span><span class="gray-text"
-                   style="font-size:14px;font-weight:600;line-height:17.3px;">
-- {{ItinerarySegmentInfo.[0].GuestFlightInfo}}</span>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
+                                                                            {{!-- <tr>
                                                                                 <td style="padding-left: 6px">
 <span
         style="font-size:14px;font-weight:300;height:25px;display:inline-block;">Fare
@@ -1610,7 +1671,7 @@ Type</span><span class="gray-text"
                                                                                         style="font-size:14px;font-weight:600;line-height:17.3px;">
 - {{ItinerarySegmentInfo.[0].TravelSim}}</span>
                                                                                 </td>
-                                                                            </tr>
+                                                                            </tr> --}}
                                                                             {{#if BookingInfo.ShowCarbonOffsetFees}}
                                                                                 <tr>
                                                                                     <td style="padding-left: 6px">
@@ -1632,13 +1693,84 @@ Type</span><span class="gray-text"
                                                                             <tr>
                                                                                 <td></td>
                                                                             </tr>
+                                                                            {{!-- payment detail info 2 --}}
                                                                             <tr>
-                                                                                <td><strong
-                                                                                        class="hk-table__content__list__title"
-                                                                                        style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{ItinerarySegmentInfo.[1].TripType}}</strong>
+                                                                                <tr>
+                                                                                    <td><strong
+                                                                                            class="hk-table__content__list__title"
+                                                                                            style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{PaymentDetailsInfo.[1].TripType}}</strong>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fare</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].Fare}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fuel Surcharge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].FuelSurcharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Airport Construction Fee</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].AirportConstructionFee}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HK Air Passenger Departure Tax</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].HKAirPassengerDepartureTax}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HKG Security Charge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].HKGSecurityCharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Carry On Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[1].CarryOnBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].CarryOnBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Checked Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[1].CheckedBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].CheckedBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Sport Equipment</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].SportEquipment}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Seat Selection: 
+                                                                                            {{#each PaymentDetailsInfo.[1].SeatSelection.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].SeatSelection.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">U-First</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].UFirst}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Meals: 
+                                                                                            {{#each PaymentDetailsInfo.[1].Meals.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].Meals.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Travel Data Sim Card</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[1].TravelDataSimCard}}</div>
                                                                                 </td>
                                                                             </tr>
-                                                                            <tr>
+                                                                            {{!-- <tr>
                                                                                 <td style="padding-left: 6px"><span
                                                                                         style="font-size:14px;font-weight:300;height:25px;display:inline-block;">Flight
 Number</span><span class="gray-text"
@@ -1734,7 +1866,7 @@ Type</span><span class="gray-text"
                                                                                         style="font-size:14px;font-weight:600;line-height:17.3px;">
 - {{ItinerarySegmentInfo.[1].TravelSim}}</span>
                                                                                 </td>
-                                                                            </tr>
+                                                                            </tr> --}}
                                                                             {{#if BookingInfo.ShowCarbonOffsetFees}}
                                                                                 <tr>
                                                                                     <td style="padding-left: 6px">
@@ -1765,13 +1897,84 @@ Type</span><span class="gray-text"
                                                                             <tr>
                                                                                 <td></td>
                                                                             </tr>
+                                                                            {{!-- payment detail info 3 --}}
                                                                             <tr>
-                                                                                <td><strong
-                                                                                        class="hk-table__content__list__title"
-                                                                                        style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{ItinerarySegmentInfo.[2].TripType}}</strong>
+                                                                                <tr>
+                                                                                    <td><strong
+                                                                                            class="hk-table__content__list__title"
+                                                                                            style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{PaymentDetailsInfo.[2].TripType}}</strong>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fare</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].Fare}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fuel Surcharge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].FuelSurcharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Airport Construction Fee</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].AirportConstructionFee}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HK Air Passenger Departure Tax</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].HKAirPassengerDepartureTax}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HKG Security Charge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].HKGSecurityCharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Carry On Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[2].CarryOnBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].CarryOnBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Checked Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[2].CheckedBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].CheckedBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Sport Equipment</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].SportEquipment}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Seat Selection: 
+                                                                                            {{#each PaymentDetailsInfo.[2].SeatSelection.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].SeatSelection.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">U-First</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].UFirst}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Meals: 
+                                                                                            {{#each PaymentDetailsInfo.[2].Meals.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].Meals.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Travel Data Sim Card</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[2].TravelDataSimCard}}</div>
                                                                                 </td>
                                                                             </tr>
-                                                                            <tr>
+                                                                            {{!-- <tr>
                                                                                 <td style="padding-left: 6px"><span
                                                                                         style="font-size:14px;font-weight:300;height:25px;display:inline-block;">Flight
 Number</span><span class="gray-text"
@@ -1867,7 +2070,7 @@ Type</span><span class="gray-text"
                                                                                         style="font-size:14px;font-weight:600;line-height:17.3px;">
 - {{ItinerarySegmentInfo.[2].TravelSim}}</span>
                                                                                 </td>
-                                                                            </tr>
+                                                                            </tr> --}}
                                                                             {{#if BookingInfo.ShowCarbonOffsetFees}}
                                                                                 <tr>
                                                                                     <td style="padding-left: 6px">
@@ -1889,7 +2092,84 @@ Type</span><span class="gray-text"
                                                                             <tr>
                                                                                 <td></td>
                                                                             </tr>
+                                                                            {{!-- payment detail info 4 --}}
                                                                             <tr>
+                                                                                <tr>
+                                                                                    <td><strong
+                                                                                            class="hk-table__content__list__title"
+                                                                                            style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{PaymentDetailsInfo.[3].TripType}}</strong>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fare</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].Fare}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Fuel Surcharge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].FuelSurcharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Airport Construction Fee</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].AirportConstructionFee}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HK Air Passenger Departure Tax</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].HKAirPassengerDepartureTax}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">HKG Security Charge</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].HKGSecurityCharge}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Carry On Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[3].CarryOnBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].CarryOnBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                        <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Checked Baggage: 
+                                                                                            {{#each PaymentDetailsInfo.[3].CheckedBaggage.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].CheckedBaggage.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Sport Equipment</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].SportEquipment}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Seat Selection: 
+                                                                                            {{#each PaymentDetailsInfo.[3].SeatSelection.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].SeatSelection.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">U-First</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].UFirst}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">
+                                                                                            Meals: 
+                                                                                            {{#each PaymentDetailsInfo.[3].Meals.item}}
+                                                                                                    {{this}}
+                                                                                            {{/each}}
+                                                                                        </div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].Meals.price}}</div>
+                                                                                </td>
+                                                                                <td style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;">Travel Data Sim Card</div>
+                                                                                    <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{PaymentDetailsInfo.[3].TravelDataSimCard}}</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            {{!-- <tr>
                                                                                 <td><strong
                                                                                         class="hk-table__content__list__title"
                                                                                         style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{ItinerarySegmentInfo.[3].TripType}}</strong>
@@ -1991,7 +2271,7 @@ Type</span><span class="gray-text"
                                                                                         style="font-size:14px;font-weight:600;line-height:17.3px;">
 - {{ItinerarySegmentInfo.[3].TravelSim}}</span>
                                                                                 </td>
-                                                                            </tr>
+                                                                            </tr> --}}
                                                                             {{#if BookingInfo.ShowCarbonOffsetFees}}
                                                                                 <tr>
                                                                                     <td style="padding-left: 6px">
@@ -2007,14 +2287,144 @@ Type</span><span class="gray-text"
                                                                     </td>
                                                                     <td class="c-space" style="width:26px">&nbsp;
                                                                     </td>
-
                                                                 </tr>
                                                             {{/if}}
 
                                                         {{~/each}}
-
+                                                        
+                                                        {{!-- Others --}}
                                                         <tr>
-                                                            <td colspan="4" style="height: 26px;"></td>
+                                                            <td class="c-space" style="width:26px">&nbsp;
+                                                            </td>
+                                                            <td class="hk-table__content__title line-bottom"
+                                                                colspan="4"
+                                                                style="border-bottom:2px #C3C6CD solid;color:#928C96;font-size:16px;font-weight:500;padding-bottom:10px">
+                                                                <strong>
+                                                                    Others
+                                                                </strong>
+                                                            </td>
+                                                            <td class="c-space" style="width:26px">&nbsp;
+                                                            </td>
+                                                            <tr>
+                                                                <td class="c-space" style="width:26px">&nbsp;
+                                                                </td>
+                                                                <td class="hk-table__content__list"
+                                                                    style="line-height:20px"
+                                                                    width="268" valign="top">
+                                                                    <table style="font-family:'Noto Sans',sans-serif,Arial,Noto"
+                                                                            cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        {{!-- others info 1 --}}
+                                                                        <tr>
+                                                                            <td style="padding-top:10px;  display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;">Insurance</div>
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{OthersInfo.Insurance}}</div>
+                                                                            </td>
+                                                                            <td style=" display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;">Carbon Offset</div>
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{OthersInfo.CarbonOffset}}</div>
+                                                                            </td>
+                                                                            <td style=" display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;">SMS Itinerary</div>
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{OthersInfo.SMSItinerary}}</div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="hk-table__content__list"
+                                                                    style="line-height:20px"
+                                                                    width="268" valign="top">
+                                                                    <table style="font-family:'Noto Sans',sans-serif,Arial,Noto"
+                                                                            cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        {{!-- others info 2 --}}
+                                                                        <tr>
+                                                                            <td style="padding-top:10px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;">Non-refundable fare difference</div>
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{OthersInfo.NonRefundableFareDifference}}</div>
+                                                                            </td>
+                                                                            <td style=" display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;">Reservation</div>
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{OthersInfo.Reservation}}</div>
+                                                                            </td>
+                                                                            <td style=" display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;">Change fees </div>
+                                                                                <div style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">{{OthersInfo.ChangeFees}}</div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="c-space" style="width:26px">&nbsp;
+                                                                </td>
+                                                            </tr>
+                                                        </tr>
+
+                                                        {{!-- Payment Record --}}
+                                                        <tr>
+                                                            <td class="c-space" style="width:26px">&nbsp;
+                                                            </td>
+                                                            <td class="hk-table__content__title line-bottom"
+                                                                colspan="4"
+                                                                style="border-bottom:2px #C3C6CD solid;color:#928C96;font-size:16px;font-weight:500;padding-bottom:10px">
+                                                                <strong>
+                                                                    Payment Record
+                                                                </strong>
+                                                            </td>
+                                                            <td class="c-space" style="width:26px">&nbsp;
+                                                            </td>
+                                                            {{#each PaymentInfo.PaymentDetails ~}}
+                                                            <tr>
+                                                                <td class="c-space" style="width:26px">&nbsp;
+                                                                </td>
+                                                                <td class="hk-table__content__list"
+                                                                    style="line-height:20px"
+                                                                    width="268" valign="top">
+                                                                    <table style="font-family:'Noto Sans',sans-serif,Arial,Noto"
+                                                                            cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        {{!-- payment record info 1 --}}
+                                                                        <tr>
+                                                                            <td style="padding-top:10px;  display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;">Payment Method - <span style="font-weight:bolder">{{this.PaymentType}}</span></div>
+                                                                            </td>
+                                                                            <td style=" display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;">Date - <span style="font-weight:bolder">{{this.PaymentDate}}</span></div>
+                                                                            </td>
+                                                                            <td style=" display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;">Status - <span style="font-weight:bolder">{{this.Status}}</span></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="hk-table__content__list"
+                                                                    style="line-height:20px"
+                                                                    width="268" valign="top">
+                                                                    <table style="font-family:'Noto Sans',sans-serif,Arial,Noto"
+                                                                            cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        {{!-- payment record info 2 --}}
+                                                                        <tr>
+                                                                            <td style="padding-top:10px; display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;">Pricing Currency - <span style="font-weight:bolder">{{this.PricingCurrency}}</span></div>
+                                                                            </td>
+                                                                            <td style=" display:flex; justify-content: space-between;margin-bottom:12px;">
+                                                                                <div style="font-size:12px;color:#000000;">Transaction Currency - <span style="font-weight:bolder">{{this.TransactionCurrency}}</span></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="c-space" style="width:26px">&nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            {{~/each}}
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -2075,7 +2485,7 @@ Type</span><span class="gray-text"
                                     <td>&nbsp;</td>
                                     <td>&nbsp;</td>
                                 </tr>
-                                <tr style="margin: 0; padding: 0;">
+                                {{!-- <tr style="margin: 0; padding: 0;">
                                     <td width="30" style="margin: 0; padding: 0;"></td>
                                     <td style="vertical-align: middle; margin: 0; padding: 0;">
                                         <p style="font-size: 14px; line-height: 18px;">
@@ -2088,12 +2498,12 @@ Type</span><span class="gray-text"
                                         </p>
                                     </td>
                                     <td width="30"></td>
-                                </tr>
-                                <tr>
+                                </tr> --}}
+                                {{!-- <tr>
                                     <td height="44">&nbsp;</td>
                                     <td>&nbsp;</td>
                                     <td>&nbsp;</td>
-                                </tr>
+                                </tr> --}}
                                 </tbody>
                             </table>
                             <!--END of Legal-->

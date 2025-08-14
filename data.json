@@ -1,6 +1,6 @@
 {
   "Email": "a@b.com",
-  "FirstName": "jan adt",
+  "FirstName": "Chen Tai Man",
   "LastName": "adt",
   "DerivedCountry": null,
   "DeclaredCountry": null,
@@ -58,26 +58,26 @@
         "FareOrBookingClass": "U",
           "DepartureDateText": "16th Aug",
           "DepartureDayOfWeek": "星期六",
-          "DepartCode": "PKX",
+          "DepartCode": "HKG",
           "FlightNo": "UO235",
           "IsFerryRoute": false,
           "IsBusRoute": false,
           "ArriveCode": "BKK",
           "DepartTime": "02:40",
-          "DepartDate": "16 8月, 2025, 周六",
-          "DepartCity": "北京大興國際機場",
+          "DepartDate": "1st Mar 2024,Fri",
+          "DepartCity": "Hong Kong International Airport Terminal 1",
           "DepartureTerminal": null,
           "DepartOperatedByNote": null,
           "ArriveTime": "09:40",
-          "ArriveDate": "16 8月, 2025, 周六",
-          "ArriveCity": "蘇凡納布米國際機場",
+          "ArriveDate": "1st Mar 2024,Fri",
+          "ArriveCity": "Tokyo Narita International Airport Terminal 2",
           "ArrivalTerminal": null,
           "ArriveOperatedByNote": null
           
       },
       {
-        "TripType": "出發",
-        "FareClassName": "隨心飛",
+        "TripType": "Return",
+        "FareClassName": "Max",
         "FareOrBookingClass": "U",
           "DepartureDateText": "23rd Aug",
           "DepartureDayOfWeek": "星期六",
@@ -87,13 +87,13 @@
           "IsBusRoute": false,
           "ArriveCode": "PKX",
           "DepartTime": "10:15",
-          "DepartDate": "23 8月, 2025, 周六",
-          "DepartCity": "蘇凡納布米國際機場",
+          "DepartDate": "6th Mar 2024,Wed",
+          "DepartCity": "Tokyo Narita International Airport Terminal 2",
           "DepartureTerminal": null,
           "DepartOperatedByNote": null,
           "ArriveTime": "01:40",
-          "ArriveDate": "24 8月, 2025, 周日",
-          "ArriveCity": "北京大興國際機場",
+          "ArriveDate": "7th Mar 2024,Thu",
+          "ArriveCity": "Hong Kong International Airport Terminal 1",
           "ArrivalTerminal": null,
           "ArriveOperatedByNote": null
       }
@@ -101,12 +101,12 @@
   "HasNGBDestination": null,
   "Passengers": [
       {
-          "Title": "先生",
-          "FirstName": "jan",
-          "LastName": "adt",
+          "Title": "Mr",
+          "FirstName": "Chen",
+          "LastName": "Tai Man",
           "ItinerarySegmentInfo": [
               {
-                  "TripType": "出發",
+                  "TripType": "Departure",
                   "GuestFlightInfo": "UO235",
                   "FareClass": {
                       "FareClassName": "隨心飛"
@@ -123,7 +123,7 @@
                   "CarbonOffset": "是"
               },
               {
-                  "TripType": "出發",
+                  "TripType": "Return",
                   "GuestFlightInfo": "UO704",
                   "FareClass": {
                       "FareClassName": "隨心飛"
@@ -140,7 +140,7 @@
                   "CarbonOffset": "是"
               },
               {
-                  "TripType": "回程",
+                  "TripType": "Departure",
                   "GuestFlightInfo": "UO701",
                   "FareClass": {
                       "FareClassName": "隨心飛"
@@ -157,7 +157,7 @@
                   "CarbonOffset": "是"
               },
               {
-                  "TripType": "回程",
+                  "TripType": "Return",
                   "GuestFlightInfo": "UO234",
                   "FareClass": {
                       "FareClassName": "隨心飛"
@@ -173,94 +173,322 @@
                   "TravelSim": "NA",
                   "CarbonOffset": "是"
               }
+          ],
+          "PaymentDetailsInfo": [
+            {
+                "TripType": "Departure",
+                "Fare": "HKD 100",
+                "FuelSurcharge": "HKD 120",
+                "AirportConstructionFee": "HKD 150",
+                "HKAirPassengerDepartureTax": "HKD 100",
+                "HKGSecurityCharge": "HKD 50",
+                "CarryOnBaggage": {
+                  "item": ["Small PersonalItem"],
+                  "price": "HKD 0"
+                  },
+                "CheckedBaggage": {
+                  "item": ["32kg", "32kg"],
+                  "price": "NA"
+                  },
+                "SportEquipment": "NA",
+                "SeatSelection": {
+                  "item": [],
+                  "price": "NA"
+                  },
+                "UFirst": "NA",
+                "Meals": {
+                  "item": [],
+                  "price": "NA"
+                  },
+                "TravelDataSimCard": "NA"
+            },
+            {
+            "TripType": "Return",
+            "Fare": "HKD 400",
+            "FuelSurcharge": "HKD 150",
+            "AirportConstructionFee": "HKD 120",
+            "HKAirPassengerDepartureTax": "HKD 55",
+            "HKGSecurityCharge": "HKD 90",
+            "CarryOnBaggage": {
+                "item": ["Small PersonalItem","Cabin Baggage"],
+                "price": "HKD 100"
+                },
+            "CheckedBaggage": {
+                "item": ["32kg", "32kg"],
+                "price": "420"
+                },
+            "SportEquipment": "HKD 320",
+            "SeatSelection": {
+                "item": ["1A"],
+                "price": "HKD210"
+                },
+            "UFirst": "HKD 50",
+            "Meals": {
+                "item": ["Meatballs with Creamy", "Mashed Potatoes", "Truffle Mushroom Pasta"],
+                "price": "HKD 110"
+                },
+            "TravelDataSimCard": "HKD 80"
+            },
+            {
+                "TripType": "Departure",
+                "Fare": "HKD 100",
+                "FuelSurcharge": "HKD 120",
+                "AirportConstructionFee": "HKD 150",
+                "HKAirPassengerDepartureTax": "HKD 100",
+                "HKGSecurityCharge": "HKD 50",
+                "CarryOnBaggage": {
+                  "item": ["Small PersonalItem"],
+                  "price": "HKD 0"
+                  },
+                "CheckedBaggage": {
+                  "item": ["32kg", "32kg"],
+                  "price": "NA"
+                  },
+                "SportEquipment": "NA",
+                "SeatSelection": {
+                  "item": [],
+                  "price": "NA"
+                  },
+                "UFirst": "NA",
+                "Meals": {
+                  "item": [],
+                  "price": "NA"
+                  },
+                "TravelDataSimCard": "NA"
+            },
+            {
+            "TripType": "Return",
+            "Fare": "HKD 400",
+            "FuelSurcharge": "HKD 150",
+            "AirportConstructionFee": "HKD 120",
+            "HKAirPassengerDepartureTax": "HKD 55",
+            "HKGSecurityCharge": "HKD 90",
+            "CarryOnBaggage": {
+                "item": ["Small PersonalItem","Cabin Baggage"],
+                "price": "HKD 100"
+                },
+            "CheckedBaggage": {
+                "item": ["32kg", "32kg"],
+                "price": "420"
+                },
+            "SportEquipment": "HKD 320",
+            "SeatSelection": {
+                "item": ["1A"],
+                "price": "HKD210"
+                },
+            "UFirst": "HKD 50",
+            "Meals": {
+                "item": ["Meatballs with Creamy", "Mashed Potatoes", "Truffle Mushroom Pasta"],
+                "price": "HKD 110"
+                },
+            "TravelDataSimCard": "HKD 80"
+            }
           ]
       },
       {
-        "Title": "先生",
-        "FirstName": "jan",
-        "LastName": "adt",
-        "ItinerarySegmentInfo": [
+          "Title": "Mr",
+          "FirstName": "Chen",
+          "LastName": "Siu Sum",
+          "ItinerarySegmentInfo": [
+              {
+                  "TripType": "Departure",
+                  "GuestFlightInfo": "UO235",
+                  "FareClass": {
+                      "FareClassName": "隨心飛"
+                  },
+                  "FareOrBookingClass": "U",
+                  "Meal": "NA",
+                  "Insurance": "NA",
+                  "Seat": "2A",
+                  "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
+                  "CarryOnBaggage": "1 x 隨身物品",
+                  "SportsEquipment": "NA",
+                  "UFirst": "NA",
+                  "TravelSim": "NA",
+                  "CarbonOffset": "是"
+              },
+              {
+                  "TripType": "Return",
+                  "GuestFlightInfo": "UO704",
+                  "FareClass": {
+                      "FareClassName": "隨心飛"
+                  },
+                  "FareOrBookingClass": "U",
+                  "Meal": "NA",
+                  "Insurance": "NA",
+                  "Seat": "2A",
+                  "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
+                  "CarryOnBaggage": "1 x 隨身物品",
+                  "SportsEquipment": "NA",
+                  "UFirst": "NA",
+                  "TravelSim": "NA",
+                  "CarbonOffset": "是"
+              },
+              {
+                  "TripType": "Departure",
+                  "GuestFlightInfo": "UO701",
+                  "FareClass": {
+                      "FareClassName": "隨心飛"
+                  },
+                  "FareOrBookingClass": "U",
+                  "Meal": "NA",
+                  "Insurance": "NA",
+                  "Seat": "2A",
+                  "CheckedBaggage": "1 x 20kg 寄艙行李（一件）",
+                  "CarryOnBaggage": "1 x 隨身物品",
+                  "SportsEquipment": "NA",
+                  "UFirst": "NA",
+                  "TravelSim": "NA",
+                  "CarbonOffset": "是"
+              },
+              {
+                  "TripType": "Return",
+                  "GuestFlightInfo": "UO234",
+                  "FareClass": {
+                      "FareClassName": "隨心飛"
+                  },
+                  "FareOrBookingClass": "U",
+                  "Meal": "NA",
+                  "Insurance": "NA",
+                  "Seat": "2A",
+                  "CheckedBaggage": "1 x 20kg 寄艙行李（一件）",
+                  "CarryOnBaggage": "1 x 隨身物品",
+                  "SportsEquipment": "NA",
+                  "UFirst": "NA",
+                  "TravelSim": "NA",
+                  "CarbonOffset": "是"
+              }
+          ],
+          "PaymentDetailsInfo": [
             {
-                "TripType": "出發",
-                "GuestFlightInfo": "UO235",
-                "FareClass": {
-                    "FareClassName": "隨心飛"
-                },
-                "FareOrBookingClass": "U",
-                "Meal": "NA",
-                "Insurance": "NA",
-                "Seat": "2A",
-                "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
-                "CarryOnBaggage": "1 x 隨身物品",
-                "SportsEquipment": "NA",
+                "TripType": "Departure",
+                "Fare": "HKD 100",
+                "FuelSurcharge": "HKD 120",
+                "AirportConstructionFee": "HKD 150",
+                "HKAirPassengerDepartureTax": "HKD 100",
+                "HKGSecurityCharge": "HKD 50",
+                "CarryOnBaggage": {
+                  "item": ["Small PersonalItem"],
+                  "price": "HKD 0"
+                  },
+                "CheckedBaggage": {
+                  "item": ["32kg", "32kg"],
+                  "price": "NA"
+                  },
+                "SportEquipment": "NA",
+                "SeatSelection": {
+                  "item": [],
+                  "price": "NA"
+                  },
                 "UFirst": "NA",
-                "TravelSim": "NA",
-                "CarbonOffset": "是"
+                "Meals": {
+                  "item": [],
+                  "price": "NA"
+                  },
+                "TravelDataSimCard": "NA"
             },
             {
-                "TripType": "出發",
-                "GuestFlightInfo": "UO704",
-                "FareClass": {
-                    "FareClassName": "隨心飛"
+            "TripType": "Return",
+            "Fare": "HKD 400",
+            "FuelSurcharge": "HKD 150",
+            "AirportConstructionFee": "HKD 120",
+            "HKAirPassengerDepartureTax": "HKD 55",
+            "HKGSecurityCharge": "HKD 90",
+            "CarryOnBaggage": {
+                "item": ["Small PersonalItem","Cabin Baggage"],
+                "price": "HKD 100"
                 },
-                "FareOrBookingClass": "U",
-                "Meal": "NA",
-                "Insurance": "NA",
-                "Seat": "2A",
-                "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
-                "CarryOnBaggage": "1 x 隨身物品",
-                "SportsEquipment": "NA",
-                "UFirst": "NA",
-                "TravelSim": "NA",
-                "CarbonOffset": "是"
+            "CheckedBaggage": {
+                "item": ["32kg", "32kg"],
+                "price": "420"
+                },
+            "SportEquipment": "HKD 320",
+            "SeatSelection": {
+                "item": ["1A"],
+                "price": "HKD210"
+                },
+            "UFirst": "HKD 50",
+            "Meals": {
+                "item": ["Meatballs with Creamy", "Mashed Potatoes", "Truffle Mushroom Pasta"],
+                "price": "HKD 110"
+                },
+            "TravelDataSimCard": "HKD 80"
             },
             {
-                "TripType": "回程",
-                "GuestFlightInfo": "UO701",
-                "FareClass": {
-                    "FareClassName": "隨心飛"
-                },
-                "FareOrBookingClass": "U",
-                "Meal": "NA",
-                "Insurance": "NA",
-                "Seat": "2A",
-                "CheckedBaggage": "1 x 20kg 寄艙行李（一件）",
-                "CarryOnBaggage": "1 x 隨身物品",
-                "SportsEquipment": "NA",
+                "TripType": "Departure",
+                "Fare": "HKD 100",
+                "FuelSurcharge": "HKD 120",
+                "AirportConstructionFee": "HKD 150",
+                "HKAirPassengerDepartureTax": "HKD 100",
+                "HKGSecurityCharge": "HKD 50",
+                "CarryOnBaggage": {
+                  "item": ["Small PersonalItem"],
+                  "price": "HKD 0"
+                  },
+                "CheckedBaggage": {
+                  "item": ["32kg", "32kg"],
+                  "price": "NA"
+                  },
+                "SportEquipment": "NA",
+                "SeatSelection": {
+                  "item": [],
+                  "price": "NA"
+                  },
                 "UFirst": "NA",
-                "TravelSim": "NA",
-                "CarbonOffset": "是"
+                "Meals": {
+                  "item": [],
+                  "price": "NA"
+                  },
+                "TravelDataSimCard": "NA"
             },
             {
-                "TripType": "回程",
-                "GuestFlightInfo": "UO234",
-                "FareClass": {
-                    "FareClassName": "隨心飛"
+            "TripType": "Return",
+            "Fare": "HKD 400",
+            "FuelSurcharge": "HKD 150",
+            "AirportConstructionFee": "HKD 120",
+            "HKAirPassengerDepartureTax": "HKD 55",
+            "HKGSecurityCharge": "HKD 90",
+            "CarryOnBaggage": {
+                "item": ["Small PersonalItem","Cabin Baggage"],
+                "price": "HKD 100"
                 },
-                "FareOrBookingClass": "U",
-                "Meal": "NA",
-                "Insurance": "NA",
-                "Seat": "2A",
-                "CheckedBaggage": "1 x 20kg 寄艙行李（一件）",
-                "CarryOnBaggage": "1 x 隨身物品",
-                "SportsEquipment": "NA",
-                "UFirst": "NA",
-                "TravelSim": "NA",
-                "CarbonOffset": "是"
+            "CheckedBaggage": {
+                "item": ["32kg", "32kg"],
+                "price": "420"
+                },
+            "SportEquipment": "HKD 320",
+            "SeatSelection": {
+                "item": ["1A"],
+                "price": "HKD210"
+                },
+            "UFirst": "HKD 50",
+            "Meals": {
+                "item": ["Meatballs with Creamy", "Mashed Potatoes", "Truffle Mushroom Pasta"],
+                "price": "HKD 110"
+                },
+            "TravelDataSimCard": "HKD 80"
             }
-        ]
-    }
+          ]
+      }
   ],
+  "OthersInfo": {
+    "Insurance": "HKD 300",
+    "CarbonOffset": "HKD 300",
+    "SMSItinerary": "HKD 8",
+    "NonRefundableFareDifference": "HKD 100",
+    "Reservation": "NA",
+    "ChangeFees": "HKD 580"
+  },
   "PaymentInfo": {
-      "PaymentAmtTotal": "CNY 4274.39",
+      "PaymentAmtTotal": "HKD 971.00",
       "PaymentDetails": [
           {
-              "PaymentType": "中國銀聯",
-              "PaymentDate": "12/08/2025 12:04 CN Time",
+              "PaymentType": "VISA",
+              "PaymentDate": "12/08/2025 12:04 HK Time",
               "PaymentAmount": null,
-              "Status": "已通過",
-              "PricingCurrency": "CNY 4274.39",
-              "TransactionCurrency": "CNY 4274.39",
+              "Status": "Approved",
+              "PricingCurrency": "HKD 971.00",
+              "TransactionCurrency": "HKD 971.00",
               "ExchangeRate": null
           }
       ]
