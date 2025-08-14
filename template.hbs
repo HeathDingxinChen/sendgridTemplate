@@ -1,2251 +1,335 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-
+<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/app.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../css/theme-hke.css" /> -->
-    <!--[if !mso]><!-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<![endif]-->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <!-- @start: PROJECT CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap:300,400,500,600,700&amp;subset=latin-ext"
-        rel="stylesheet">
-    <title>Itinerary</title>
-    <style>
-        @media only screen {
-            html {
-                min-height: 100%;
-                background: #fff
-            }
-
-            body {
-                width: 100% !important;
-                min-width: 100%;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-                margin: 0;
-                padding: 0;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                box-sizing: border-box
-            }
-
-            img {
-                -ms-interpolation-mode: bicubic;
-                display: block
-            }
-
-            td {
-                word-wrap: break-word;
-                -webkit-hyphens: auto;
-                -moz-hyphens: auto;
-                hyphens: auto;
-                border-collapse: collapse !important
-            }
-
-            table,
-            td {
-                padding: 0;
-                vertical-align: top;
-                text-align: left
-            }
-
-            table {
-                border-spacing: 0;
-                border-collapse: collapse;
-                width: 100%
-            }
-        }
-
-        @media only screen and (max-width: 610px) {
-            center {
-                min-width: 0 !important
-            }
-
-            table.container {
-                width: 98% !important
-            }
-        }
-
-        .fare-class-Fun {
-            color: #fff;
-            padding: 1px;
-            font-family: Arial;
-            border-radius: 10px;
-            width: 70px;
-            text-align: center;
-            background-color: #A533C5;
-            display: inline-block
-        }
-
-        .fare-class-FunP {
-            color: #fff;
-            padding: 1px;
-            font-family: Arial;
-            border-radius: 10px;
-            width: 70px;
-            text-align: center;
-            background-color: #6E2D91;
-            display: inline-block
-        }
-
-        .fare-class-Ubiz {
-            color: #fff;
-            padding: 1px;
-            font-family: Arial;
-            border-radius: 10px;
-            width: 70px;
-            text-align: center;
-            background-color: #50bef0;
-            display: inline-block
-        }
-
-        .fare-class-FunFlex {
-            color: #fff;
-            padding: 1px;
-            font-family: Arial;
-            border-radius: 10px;
-            width: 70px;
-            text-align: center;
-            background-color: #0072ce;
-            display: inline-block
-        }
-
-        .fare-class-WorldClassFare {
-            color: #fff;
-            padding: 1px 10px;
-            font-family: Arial;
-            border-radius: 10px;
-            background-color: #A533C5;
-            display: inline-block;
-        }
-
-        .fare-class-Rediscover {
-
-            color: #fff;
-            padding-bottom: 2px;
-            padding-top: 2px;
-            padding-left: 18px;
-            padding-right: 18px;
-            font-family: Arial;
-            border-radius: 5px;
-            text-align: center;
-            background-color: #A533C5;
-            display: inline;
-        }
-
-        .fare-class-Voucher {
-            color: #fff;
-            padding: 1px;
-            font-family: Arial;
-            border-radius: 10px;
-            width: 70px;
-            text-align: center;
-            background-color: #A533C5;
-            display: inline-block;
-        }
-    </style>
+    <title></title>
 
 </head>
+<body>
+<style>
 
-<body
-    style="Margin:0;color:#564f70;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:16px;font-weight:400;mso-line-height-rule: exactly;line-height:1.1;margin:0;padding:0;text-align:left">
-    <span class="preheader"
-        style="color:#fff;display:none!important;font-size:1px;line-height:1px;max-height:0;max-width:0;mso-hide:all!important;opacity:0;overflow:hidden;visibility:hidden"></span>
-    <table class="body"
-        style="Margin:10px 0;background:#e6e6e6;font-family:'Noto Sans',sans-serif,Arial,Noto;height:100%;margin:10px 0;width:100%">
-        <tr>
-            <td class="center" align="center" valign="top">
-                <center data-parsed style="min-width:600px;width:100%">
+    .text-general {
+        font: 'Pluto Sans';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        color: #000000;
+    }
 
-                    <table border="0" cellspacing="0" cellpadding="0" width="642" align="center"
-                        class="container float-center"
-                        style="Margin:0 auto;background:#fff;float:none;font-family:'Noto Sans',sans-serif,Arial,Noto;margin:0 auto;text-align:center;width:642px">
-                        <tr>
-                            <td class="content"
-                                style="Margin:0;color:#564f70;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:16px;font-weight:400;line-height:1.1;margin:0;padding:0;text-align:left">
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                    style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                    <tr>
-                                        <a href="https://www.hkexpress.com/en-hk/?utm_campaign=itinerary&utm_source=sendgrid&utm_medium=email&utm_content=en-us_banner-hero"
-                                            target="_blank">
-                                            <img src="{{BookingInfo.HeroBannerPictureUrl}}" alt="HKExpress" width="642"
-                                                border="0">
-                                        </a>
-                                    </tr>
-                                </table>
+    #mmb-button {
+        /* CTA button */ /* Auto layout */
 
-                                <table class="title-bar_wrap" cellspacing="0" cellpadding="0" border="0" width="100%"
-                                    style="background-color: #702B91;color:#f4f4f7;font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                    <tr>
-                                        <td style="width:26px">&nbsp;</td>
+        justify-content: center;
+        align-items: center;
+        padding: 14px 60px;
+        gap: 1px;
+        width: 200px;
+        max-width: 200px;
+        min-width: 200px;
+        height: 48px;
+        max-height: 48px;
+        min-height: 48px;
+        background: #702B91;
+        text-decoration: none; /* Remove underline */
+        color: white;
+        box-sizing: border-box;
+        white-space: nowrap;
+        font-size: 20px;
+    }
 
-                                        {{#if IsMultiTrip}}
-                                        <td class="title-bar__title"
-                                            style="font-size:20px;line-height:25px;font-weight:500;height:57px;text-align:left;vertical-align:middle">
-                                            Your Fly Pass booking confirmation
-                                        </td>
-                                        {{else}}
-                                        <td class="title-bar__title"
-                                            style="font-size:20px;line-height:25px;font-weight:500;height:57px;text-align:left;vertical-align:middle">
-                                            Your booking confirmation
-                                        </td>
-                                        {{/if}}
-                                    </tr>
-                                </table>
-                                <!-- BOOKING REFERENCE + SERVICES -->
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%" class="my-booking"
-                                    style="background-color:#fff;color:#151E3B;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:17px">
-                                    <tr>
-                                        <td>
-                                            <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                                style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="r-space" style="height:24px">&nbsp;</td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
+    #mmb-button:active,
+    #mmb-button:focus {
+        color: white; /* Prevent text color change on click */
+    }
 
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="text--purple">
-                                                        <p>Hi, <strong>{{FirstName}}</strong>, </p>
-                                                        <p>
-                                                            Thanks for booking your flight with HK Express. We confirm
-                                                            that
-                                                            you are travelling to
-                                                            <strong>{{BookingInfo.DestinationCity}}</strong> on
-                                                            <strong>{{FlightInfo.[0].DepartureDateText}}
-                                                                {{BookingInfo.DepartDateText.[0]}}</strong>,
-                                                            {{FlightInfo.[0].DepartureDayOfWeek}}. Here's a recap of
-                                                            your
-                                                            travel itinerary and summary
-                                                            of your payment details.
-                                                        </p>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-
-                                                {{#if HasNGBDestination}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="r-space" heigth="42" style="height:24px">&nbsp;</td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                {{#equals BookingInfo.HoursDiffBetweenCreationAndDeparture 0}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="text--purple">
-                                                        <p>
-                                                            We wish you a pleasant journey.
-                                                        </p>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                {{/equals}}
-                                                {{#equals BookingInfo.HoursDiffBetweenCreationAndDeparture 1}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="text--purple">
-                                                        <p>
-                                                            We wish you a pleasant journey.
-                                                        </p>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                {{/equals}}
-                                                {{/if}}
-
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="r-space" heigth="42" style="height:24px">&nbsp;</td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="r-space" heigth="42"
-                                                        style="height:24px;background-color: #F3F3F3;">&nbsp;
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="booking-reference text--purple"
-                                                        style="font-size: 12px; line-height: 15px; text-align:center; color: #151E3B; background-color: #F3F3F3; vertical-align: middle">
-                                                        Booking reference
-                                                        <p class="booking-reference__number"
-                                                            style="Margin: 7px 0 7px 0; color: #151E3B; font-size: 24px; line-height: 30px; font-weight: 600;">
-                                                            {{BookingInfo.PNR}}</p>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="my-booking__images__btn"
-                                                        style="text-align:center;vertical-align:middle;background-color: #F3F3F3;">
-                                                        <a href="https://mybooking.hkexpress.com/en/?utm_campaign=itinerary&utm_source=sendgrid&utm_medium=email&utm_content=en-us_mmb"
-                                                            border="0">
-                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/imgs/new-mmb-buttons/EN.png"
-                                                                border="0"
-                                                                style="display:inline-block;vertical-align: middle">
-                                                        </a>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="r-space" heigth="42"
-                                                        style="height:24px;background-color: #F3F3F3;">&nbsp;
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="r-space" heigth="42" style="height:24px">&nbsp;</td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                                class="my-booking__images"
-                                                style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                                {{#if BookingInfo.IsWowPromotion}}
-                                                {{#equals BookingInfo.WowPromotionType "JP"}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="text--purple" style="color:#151E3B">
-                                                        <strong>
-                                                            {{#equals BookingInfo.WowPromotionVersion "1"}}
-                                                            Congratulations on being the "World of Winners"!
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "2"}}
-                                                            Congratulations on being the "World of Winners"!
-                                                            {{/equals}}
-                                                            You can now purchase Extras (such as baggage, meal, or
-                                                            seat
-                                                            selection) via
-                                                            <a href="https://mybooking.hkexpress.com/en"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span style="color:#50bef0;text-decoration:none">
-                                                                    Manage&nbsp;My&nbsp;Booking
-                                                                </span>
-                                                            </a> before your flight with a better rate.
-                                                        </strong>
-                                                        <br>
-                                                        <br>
-                                                        <strong>
-                                                            If you need to make a date / time change, you can also
-                                                            access
-                                                            via
-                                                            <a href="https://mybooking.hkexpress.com/en"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">Manage&nbsp;My&nbsp;Booking</span>
-                                                            </a>, please note it is subject to a rebooking fee of
-                                                            JPY 9,900
-                                                            per segment and fare differences (including tax and
-                                                            surcharges)
-                                                            might apply. Visit
-                                                            {{#equals BookingInfo.WowPromotionVersion "1"}}
-                                                            <a href="https://bit.ly/3Cc6apt"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">here</span>
-                                                            </a>
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "2"}}
-                                                            <a href="https://bit.ly/3Cc6apt"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">here</span>
-                                                            </a>
-                                                            {{/equals}}
-                                                            for FAQ if you have any questions.
-                                                        </strong>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                {{/equals}}
-                                                {{#equals BookingInfo.WowPromotionType "GBA"}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="text--purple" style="color:#151E3B">
-                                                        <strong>
-                                                            {{#equals BookingInfo.WowPromotionVersion "1"}}
-                                                            Congratulations on being the "World of Winners"!
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "2"}}
-                                                            Congratulations on being the winner of "Fly and
-                                                            Shine"!
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "3"}}
-                                                            Congratulations on being the winner of "Gotta Go"!
-                                                            {{/equals}}
-                                                            You can now purchase Extras (such as baggage, meal, or
-                                                            seat
-                                                            selection) via
-                                                            <a href="https://mybooking.hkexpress.com/en"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span style="color:#50bef0;text-decoration:none">
-                                                                    Manage&nbsp;My&nbsp;Booking
-                                                                </span>
-                                                            </a> before your flight with a better rate.
-                                                        </strong>
-                                                        <br>
-                                                        <br>
-                                                        <strong>
-                                                            If you need to make a date / time change, you can also
-                                                            access
-                                                            via
-                                                            <a href="https://mybooking.hkexpress.com/en"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span style="color:#50bef0;text-decoration:none">
-                                                                    Manage&nbsp;My&nbsp;Booking
-                                                                </span>
-                                                            </a>, please note it is subject to a rebooking fee of
-                                                            HK$580 per
-                                                            segment and fare differences (including tax and
-                                                            surcharges)
-                                                            might apply. Visit
-                                                            {{#equals BookingInfo.WowPromotionVersion "1"}}
-                                                            <a href="https://bit.ly/3Nhogg8"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">here</span>
-                                                            </a>
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "2"}}
-                                                            <a href="https://bit.ly/3TMduSK"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">here</span>
-                                                            </a>
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "3"}}
-                                                            <a href="https://bit.ly/3TMduSK"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">here</span>
-                                                            </a>
-                                                            {{/equals}}
-                                                            for FAQ if you have any questions.
-                                                        </strong>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                {{/equals}}
-                                                {{#equals BookingInfo.WowPromotionType "HK"}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td style="color:#151E3B">
-                                                        <strong>
-                                                            {{#equals BookingInfo.WowPromotionVersion "1"}}
-                                                            Congratulations on being the "World of Winners"!
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "2"}}
-                                                            Congratulations on being the winner of "Fly and
-                                                            Shine"!
-                                                            {{/equals}}
-                                                            You can now purchase Extras (such as baggage, meal, or
-                                                            seat
-                                                            selection) via
-                                                            <a href="https://mybooking.hkexpress.com/en"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span style="color:#50bef0;text-decoration:none">
-                                                                    Manage&nbsp;My&nbsp;Booking
-                                                                </span>
-                                                            </a> before your flight with a better rate.
-                                                        </strong>
-                                                        <br>
-                                                        <br>
-                                                        <strong>
-                                                            If you need to make a date / time change, you can also
-                                                            access
-                                                            via
-                                                            <a href="https://mybooking.hkexpress.com/en"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span style="color:#50bef0;text-decoration:none">
-                                                                    Manage&nbsp;My&nbsp;Booking
-                                                                </span>
-                                                            </a>, please note it is subject to a rebooking fee of
-                                                            HK$580 per
-                                                            segment and fare differences (including tax and
-                                                            surcharges)
-                                                            might apply. Visit
-                                                            {{#equals BookingInfo.WowPromotionVersion "1"}}
-                                                            <a href="https://bit.ly/3Ncfa3Y"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">here</span>
-                                                            </a>
-                                                            {{/equals}}
-                                                            {{#equals BookingInfo.WowPromotionVersion "2"}}
-                                                            <a href="https://bit.ly/3S4ojhu"
-                                                                style="color:#50bef0;text-decoration:none">
-                                                                <span
-                                                                    style="color:#50bef0;text-decoration:none">here</span>
-                                                            </a>
-                                                            {{/equals}}
-                                                            for FAQ if you have any questions.
-                                                        </strong>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                {{/equals}}
-                                                {{else}}
-                                                <!-- <tr>
-                                            <td class="c-space" style="width:26px">&nbsp;</td>
-                                            <td class="text--purple" style="color:#151E3B">
-                                            <strong>Passengers are required to complete a health declaration form upon arrival at some destination. We advise Customers to complete the form before you travel to facilitate a smooth journey. For the list of required destinations please see <a href="https://www.hkexpress.com/en/Plan/Travel/Important-Travel-Alerts" style="color:#50bef0;text-decoration:none"><span class="link__internal__txt" style="color:#50bef0;text-decoration:none">here</span></a>. </strong>
-                                            <strong>A number of governments have issued entry restrictions
-                                            for foreign travellers. Please see <a
-                                            href="https://www.hkexpress.com/en/Plan/Travel/Important-Travel-Alerts"
-                                            style="color:#50bef0;text-decoration:none"><span class="link__internal__txt"
-                                            style="color:#50bef0;text-decoration:none">here
-                                            </span></a>to view restrictions by country/region. These
-                                            restrictions may change at short notice, the website should
-                                            be used as a guideline only. You are advised to check the
-                                            latest information published by the government of their
-                                            destination country.
-                                            <br><br>Also, passengers are required to complete Health
-                                            Declaration forms upon arrival at some destinations. Please
-                                            be sure to complete the form before you travel to facilitate
-                                            a smooth journey. For the list of required destinations
-                                            please see <a
-                                            href="https://www.hkexpress.com/en/Plan/Travel/Important-Travel-Alerts"
-                                            style="color:#50bef0;text-decoration:none"><span class="link__internal__txt"
-                                            style="color:#50bef0;text-decoration:none">here</span></a>.
-                                            </strong>
-
-                                            {{#if HasHKGArrival}}
-                                            <strong>
-                                            <br><br>As required by the Department of Health to ensure
-                                            collection of accurate deep throat saliva specimens for
-                                            conducting COVID-19 testing upon arrival, passengers are
-                                            advised to avoid eating, drinking, mouth-washing or
-                                            teeth-brushing 2 hours before landing in Hong Kong.
-                                            </strong>
-                                            {{/if}}
-                                            </td>
-                                            <td class="c-space" style="width:26px">&nbsp;</td>
-                                            </tr> -->
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="text--purple" style="color:#151E3B">
-                                                        <p>Starting from September 1, 2023, the accepted payment methods
-                                                            onboard will be Octopus Card (excluding duty-free and HK
-                                                            Express
-                                                            branded items), VISA, and Mastercard.</p>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                                {{/if}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                    <td class="r-space" heigth="42" style="height:24px">&nbsp;</td>
-                                                    <td class="c-space" style="width:26px">&nbsp;</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                </table>
+</style>
 
 
-                                <!-- MAIN INFORMATION SECTIONS -->
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                    style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                    <tr>
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                        <td class="r-space" style="height:24px">&nbsp;</td>
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                    </tr>
-                                    <tr style="background-color:#F3F3F3">
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                        <td class="r-space" style="height:24px">&nbsp;</td>
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                    </tr>
-                                    <tr style="background-color:#F3F3F3">
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                        <td class="r-space" style="height:24px">&nbsp;</td>
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                    </tr>
-                                    <tr style="background-color:#F3F3F3">
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                        <td>
-                                            <!-- Flights -->
-                                            <table border="0" cellspacing="0" cellpadding="0" width="590"
-                                                class="flights"
-                                                style="font-family:'Noto Sans',sans-serif,Arial,Noto;background-color:#FFF;">
-                                                <tr>
-                                                    <td>
-                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                                            class="hk-table__header"
-                                                            style="background-color: #702B91;color:#fff;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:26px;font-weight:700">
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                                                <td class="hk-table__header__content"
-                                                                    style="height:69px;vertical-align:middle">
-                                                                    <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/new-icon-small-white_aircraft.png"
-                                                                        width="28" height="28" border="0"
-                                                                        style="display:inline-block;vertical-align: middle">&nbsp;<span
-                                                                        style="font-size:20px;font-weight:500;line-height:25px;">Flights</span>
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr style="background-color:#F3F3F3">
-                                                    <td style="height:8px"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                                            class="hk-table__content"
-                                                            style="color:#151E3B;font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td class="r-space" colspan="3" style="height:24px">
-                                                                    &nbsp;
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                            </tr>
-                                                            {{#each FlightInfo ~}}
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td style="display:inline-flex">
-                                                                    <div
-                                                                        style="height: 22px;font-size:16px;padding:0 8px 0 0;font-family:Pluto Sans,'Noto Sans',sans-serif,Arial,Noto;font-weight:700;text-align:left;vertical-align:middle">
-                                                                        {{this.TripType}}
-                                                                    </div>
-                                                                    <div
-                                                                        style="padding: 0 8px;justify-content: center;align-items: center;display: flex;font-size:12px;font-weight:700;text-align:center;vertical-align:middle;background-color: #E2D5E9;border-radius: 4px;">
-                                                                        <span
-                                                                            style="font-weight:700;text-align:center;vertical-align:middle;color: #702B91; ">{{this.FareClassName}}</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td></td>
-                                                                <td
-                                                                    style="font-size:12px;font-weight:500;text-align:right;vertical-align: middle;">
-                                                                    Fare Class:
-                                                                    <strong>{{this.FareOrBookingClass}}</strong>
-                                                                </td>
+<table class="body"
+       style="Margin:10px 0;background:#e6e6e6;font-family:'Noto Sans',sans-serif,Arial,Noto;height:100%;margin:10px 0;width:100%">
+    <tr>
+        <td class="center" align="center" valign="top">
+            <center data-parsed style="min-width:600px;width:100%">
 
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td class="city departure"
-                                                                    style="font-weight:500;text-align:left;vertical-align:middle;color:#702b91">
-                                                                    <div>{{this.DepartTime}}</div>
-                                                                    <div>{{this.DepartCode}}</div>
-                                                                </td>
-                                                                <td class="plane" width="40"
-                                                                    style="text-align:center;vertical-align:middle;width:40px">
-                                                                    {{#if this.IsFerryRoute }}
-                                                                    <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/icon-small_ferry.png"
-                                                                        width="40" height="38" border="0" alt="To">
-                                                                    {{else if this.IsBusRoute}}
-                                                                    <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/icon-bus-purple.png"
-                                                                        width="40" height="38" border="0" alt="To">
-                                                                    {{else}}
-                                                                    <img src="https://edge.hkexpress.com/media/booking/search/flight.png"
-                                                                        width="40" height="38" border="0" alt="To">
-                                                                    {{/if}}
-                                                                    {{this.FlightNo}}
-                                                                </td>
-                                                                <td class="city departure"
-                                                                    style="font-weight:500;text-align:left;vertical-align:middle;color:#702b91;text-align:right">
-                                                                    <div>{{this.ArriveTime}}</div>
-                                                                    <div>{{this.ArriveCode}}</div>
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td class="departure" width="275"
-                                                                    style="text-align:left;vertical-align: top;">
-                                                                    <span class="date"
-                                                                        style="font-size:14px;font-weight:400;line-height:25px">{{this.DepartDate}}</span>
-                                                                    <br>
-                                                                    <span class="airport"
-                                                                        style="font-size:14px;line-height:25px">
-                                                                        {{this.DepartCity}}
-                                                                    </span>
-                                                                    <br>
-                                                                    <span class="airport"
-                                                                        style="font-size:14px;line-height:25px">
-                                                                        {{this.DepartureTerminal}}
-                                                                    </span>
-                                                                    <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                                                        &nbsp;
-                                                                    </p>
-                                                                    {{!-- {{#or this.IsFerryRoute this.IsBusRoute}}
-                                                                    <p style="font-size:12px;">
-                                                                        {{this.DepartOperatedByNote}}
-                                                                    </p>
-                                                                    <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                                                        &nbsp;
-                                                                    </p>
-                                                                    {{/or}} --}}
-                                                                </td>
-                                                                <td class="r-space" style="height:24px">&nbsp;</td>
-                                                                <td class="arrival" width="275"
-                                                                    style="text-align:right;vertical-align: top;">
-                                                                    <span class="date"
-                                                                        style="font-size:14px;font-weight:400;line-height:25px">{{this.ArriveDate}}</span>
-                                                                    <br>
-                                                                    <span class="airport"
-                                                                        style="font-size:14px;line-height:25px">
-                                                                        {{this.ArriveCity}}
-                                                                    </span>
-                                                                    <br>
-                                                                    <span class="airport"
-                                                                        style="font-size:14px;line-height:25px">
-                                                                        {{this.ArrivalTerminal}}
-                                                                    </span>
-                                                                    <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                                                        &nbsp;
-                                                                    </p>
-                                                                    {{!-- {{#or this.IsFerryRoute this.IsBusRoute}}
-                                                                    <p style="font-size:12px;">
-                                                                        {{this.ArriveOperatedByNote}}
-                                                                    </p>
-                                                                    <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                                                        &nbsp;
-                                                                    </p>
-                                                                    {{/or}} --}}
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                            </tr>
-                                                            {{#unless @last}}
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td class="line-top" colspan="3"
-                                                                    style="border-top:1px #666666 dashed">
-                                                                    <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                                                        &nbsp;
-                                                                    </p>
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                            </tr>
-                                                            {{/unless}}
-                                                            {{~/each}}
-
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td class="r-space" colspan="3" style="height:24px">
-                                                                    &nbsp;
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                    </tr>
-                                    <tr style="background-color:#F3F3F3">
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                        <td class="r-space" style="height:24px">&nbsp;</td>
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                    </tr>
-                                    <tr style="background-color:#F3F3F3">
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                        <td class="r-space" style="height:24px">&nbsp;</td>
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                    </tr>
-                                    <tr style="background-color:#F3F3F3">
-                                        <td class="c-space" style="width:26px">&nbsp;</td>
-                                        <td>
-                                            <!-- Payment Details -->
-                                            <table border="0" cellspacing="0" cellpadding="0" width="590"
-                                                class="booking"
-                                                style="font-family:'Noto Sans',sans-serif,Arial,Noto;background-color:#FFF">
-                                                <tr>
-                                                    <td>
-                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                                            class="hk-table__header"
-                                                            style="background-color: #702B91;color:#fff;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:26px;font-weight:700">
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                                                <td class="hk-table__header__content"
-                                                                    style="height:69px;vertical-align:middle;display:flex;align-items:center;justify-content:space-between">
-                                                                    <div>
-                                                                        <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/new-icon-small-white_user.png"
-                                                                            width="28" height="28" border="0"
-                                                                            style="display:inline-block;vertical-align:middle">
-                                                                        <span
-                                                                            style="font-size:20px;font-weight:500;line-height:25px;">Payment
-                                                                            Details</span>
-                                                                    </div>
-                                                                    <div
-                                                                        style="font-size:20px;font-weight:500;line-height:25px;">
-                                                                        Total cost: {{this.PaymentInfo.PaymentAmtTotal}}
-                                                                    </div>
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                                                            class="hk-table__content"
-                                                            style="color:#151E3B;font-family:'Noto Sans',sans-serif,Arial,Noto">
-
-                                                            {{#each Passengers ~}}
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td class="r-space" colspan="2" style="height:24px">
-                                                                    &nbsp;
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                                <td class="hk-table__content__title line-bottom"
-                                                                    colspan="4"
-                                                                    style="border-bottom:2px #C3C6CD solid;color:#928C96;font-size:16px;font-weight:500;padding-bottom:10px">
-                                                                    <strong>
-                                                                        {{this.Title}} {{this.FirstName}}
-                                                                        {{this.LastName}}
-                                                                    </strong>
-                                                                </td>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-                                                            </tr>
-
-
-                                                            <tr>
-                                                                <td class="c-space" style="width:26px">&nbsp;
-                                                                </td>
-
-                                                                <td class="hk-table__content__list"
-                                                                    style="line-height:20px" width="268" valign="top">
-                                                                    <table
-                                                                        style="font-family:'Noto Sans',sans-serif,Arial,Noto"
-                                                                        cellspacing="0" cellpadding="0">
-
-                                                                        {{!-- payment detail info 1 --}}
-                                                                        {{#each this.ItinerarySegmentInfo }}
-                                                                        <tr>
-                                                                        <tr>
-                                                                            <td><strong
-                                                                                    class="hk-table__content__list__title"
-                                                                                    style="padding-top:10px;color:#702B91;display:inline-block;height:35px;font-size:18px;">{{TripType}}</strong>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Fare</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{Fare}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Fuel Surcharge</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{FuelSurcharge}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Airport Construction Fee</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{AirportConstructionFee}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                HK Air Passenger Departure Tax</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{HKAirPassengerDepartureTax}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                HKG Security Charge</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{HKGSecurityCharge}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Carry On Baggage</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{CarryOnBaggageFees}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Checked Baggage</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{CheckedBaggageFees}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                HKG Security Charge</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{HKGSecurityCharge}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                HKG Security Charge</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{HKGSecurityCharge}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Seat Selection</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{SeatFees}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Meals</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{MealFees}}</div>
-                                                                        </td>
-                                                                        <td
-                                                                            style="padding-left: 6px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;">
-                                                                                Travel Data Sim Card</div>
-                                                                            <div
-                                                                                style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                                {{TravelSimFees}}</div>
-                                                                        </td>
-                                                            </tr>
-
-                                                    </td>
-                                                </tr>
-
-
-                                                {{~/each}}
-                                                {{~/each}}
-
-                                                {{!-- Others --}}
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;
-                                                    </td>
-                                                    <td class="hk-table__content__title line-bottom" colspan="4"
-                                                        style="border-bottom:2px #C3C6CD solid;color:#928C96;font-size:16px;font-weight:500;padding-bottom:10px">
-                                                        <strong>
-                                                            Others
-                                                        </strong>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;
-                                                    </td>
-                                                <tr>
-                                                    <td class="c-space" style="width:26px">&nbsp;
-                                                    </td>
-                                                    <td class="hk-table__content__list" style="line-height:20px"
-                                                        width="268" valign="top">
-                                                        <table style="font-family:'Noto Sans',sans-serif,Arial,Noto"
-                                                            cellspacing="0" cellpadding="0">
-                                                            <tr>
-                                                                <td></td>
-                                                            </tr>
-                                                            {{!-- others info 1 --}}
-                                                            <tr>
-                                                                <td
-                                                                    style="padding-top:10px;  display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;">
-                                                                        Insurance</div>
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                        {{PaymentInfo.OtherFees.InsuranceFee}}</div>
-                                                                </td>
-                                                                <td
-                                                                    style=" display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;">
-                                                                        Carbon Offset</div>
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                        {{PaymentInfo.OtherFees.CarbonOffsetFee}}</div>
-                                                                </td>
-                                                                <td
-                                                                    style=" display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;">
-                                                                        SMS Itinerary</div>
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                        {{PaymentInfo.OtherFees.SmsItineraryFee}}</div>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    <td class="hk-table__content__list" style="line-height:20px"
-                                                        width="268" valign="top">
-                                                        <table style="font-family:'Noto Sans',sans-serif,Arial,Noto"
-                                                            cellspacing="0" cellpadding="0">
-                                                            <tr>
-                                                                <td></td>
-                                                            </tr>
-                                                            {{!-- others info 2 --}}
-                                                            <tr>
-                                                                <td
-                                                                    style="padding-top:10px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;">
-                                                                        Non-refundable fare difference</div>
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                        {{PaymentInfo.OtherFees.NonRefundableFareDifferenceFee}}
-                                                                    </div>
-                                                                </td>
-                                                                <td
-                                                                    style=" display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;">
-                                                                        Reservation</div>
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                        {{PaymentInfo.OtherFees.ReservationFee}}</div>
-                                                                </td>
-                                                                <td
-                                                                    style=" display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;">
-                                                                        Change fees </div>
-                                                                    <div
-                                                                        style="font-size:12px;color:#000000;max-width:182px;font-weight:500;">
-                                                                        {{PaymentInfo.OtherFees.ChangeFees}}</div>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    <td class="c-space" style="width:26px">&nbsp;
-                                                    </td>
-                                                </tr>
-                                    </tr>
-
-                                    {{!-- Payment Record --}}
-                                    <tr>
-                                        <td class="c-space" style="width:26px">&nbsp;
-                                        </td>
-                                        <td class="hk-table__content__title line-bottom" colspan="4"
-                                            style="border-bottom:2px #C3C6CD solid;color:#928C96;font-size:16px;font-weight:500;padding-bottom:10px">
-                                            <strong>
-                                                Payment Record
-                                            </strong>
-                                        </td>
-                                        <td class="c-space" style="width:26px">&nbsp;
-                                        </td>
-                                        {{#each PaymentInfo.PaymentDetails ~}}
-                                    <tr>
-                                        <td class="c-space" style="width:26px">&nbsp;
-                                        </td>
-                                        <td class="hk-table__content__list" style="line-height:20px" width="268"
-                                            valign="top">
-                                            <table style="font-family:'Noto Sans',sans-serif,Arial,Noto" cellspacing="0"
-                                                cellpadding="0">
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
-                                                {{!-- payment record info 1 --}}
-                                                <tr>
-                                                    <td
-                                                        style="padding-top:10px;  display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                        <div style="font-size:12px;color:#000000;">Payment Method -
-                                                            <span style="font-weight:bolder">{{this.PaymentType}}</span>
-                                                        </div>
-                                                    </td>
-                                                    <td
-                                                        style=" display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                        <div style="font-size:12px;color:#000000;">Date - <span
-                                                                style="font-weight:bolder">{{this.PaymentDate}}</span>
-                                                        </div>
-                                                    </td>
-                                                    <td
-                                                        style=" display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                        <div style="font-size:12px;color:#000000;">Status - <span
-                                                                style="font-weight:bolder">{{this.Status}}</span></div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td class="hk-table__content__list" style="line-height:20px" width="268"
-                                            valign="top">
-                                            <table style="font-family:'Noto Sans',sans-serif,Arial,Noto" cellspacing="0"
-                                                cellpadding="0">
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
-                                                {{!-- payment record info 2 --}}
-                                                <tr>
-                                                    <td
-                                                        style="padding-top:10px; display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                        <div style="font-size:12px;color:#000000;">Pricing Currency -
-                                                            <span
-                                                                style="font-weight:bolder">{{this.PricingCurrency}}</span>
-                                                        </div>
-                                                    </td>
-                                                    <td
-                                                        style=" display:flex; justify-content: space-between;margin-bottom:12px;">
-                                                        <div style="font-size:12px;color:#000000;">Transaction Currency
-                                                            - <span
-                                                                style="font-weight:bolder">{{this.TransactionCurrency}}</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td class="c-space" style="width:26px">&nbsp;
-                                        </td>
-                                    </tr>
-                                    {{~/each}}
-                        </tr>
-                    </table>
-            </td>
-        </tr>
-    </table>
-    </td>
-    <td class="c-space" style="width:26px">&nbsp;</td>
-    </tr>
-
-    {{#if BookingInfo.IsHkiaPromo}}
-    <tr style="background-color:#F3F3F3">
-        <td class="c-space" style="width:26px">&nbsp;</td>
-        <td>
-            <table border="0" cellspacing="0" cellpadding="0" width="590" class="payment"
-                style="font-family:'Noto Sans',sans-serif,Arial,Noto;background-color:#FFF">
-                <tr>
-                    <td class="c-space" style="width:26px">&nbsp;</td>
-                    <td style="background-color:#FFF">
-                        <p style="font-weight: bold; font-size: 12px;">
-                            ^Voucher amount: For system setting purpose only, no related
-                            fee
-                            has been
-                            charged.
-                        </p>
-                    </td>
-                    <td class="c-space" style="width:26px">&nbsp;</td>
-                </tr>
-            </table>
-        </td>
-        <td class="c-space" style="width:26px">&nbsp;</td>
-    </tr>
-    {{/if}}
-
-    <tr style="background-color:#F3F3F3">
-        <td class="c-space" style="width:26px">&nbsp;</td>
-        <td class="r-space" style="height:24px">&nbsp;</td>
-        <td class="c-space" style="width:26px">&nbsp;</td>
-    </tr>
-    <!-- <tr style="background-color:#F3F3F3">
-                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                <td class="r-space" style="height:24px">&nbsp;</td>
-                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                </tr> -->
-    <!-- <tr style="background-color:#FFF">
-                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                <td class="r-space" style="height:24px">&nbsp;</td>
-                                <td class="c-space" style="width:26px">&nbsp;</td>
-                                </tr> -->
-    </table>
-
-    <!-- LEGAL -->
-    <table class="legal-text"
-        style="background-color: #F3F3F3; margin: 0; padding: 0; width: 100%; font-family:'Noto Sans',sans-serif,Arial,Noto">
-        <tbody style="margin: 0; padding: 0;">
-            <tr>
-                <td height="24">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            {{!-- <tr style="margin: 0; padding: 0;">
-                <td width="30" style="margin: 0; padding: 0;"></td>
-                <td style="vertical-align: middle; margin: 0; padding: 0;">
-                    <p style="font-size: 14px; line-height: 18px;">
-                        <a href="https://edge.hkexpress.com/media/booking/itinerary/ticket-notices-and-contract-terms-and-conditions-en.pdf"
-                            target="_blank" style=" color: #151E3B; "><strong>PLEASE READ THESE TERMS
-                                AND CONDITIONS CAREFULLY BY FOLLOWING THIS LINK.</strong></a> By
-                        proceeding with the purchase, this will form a contract between you and HK
-                        Express and you acknowledge that you have had the opportunity to read these
-                        terms and conditions.
-                    </p>
-                </td>
-                <td width="30"></td>
-            </tr> --}}
-            {{!-- <tr>
-                <td height="44">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr> --}}
-        </tbody>
-    </table>
-    <!--END of Legal-->
-
-    <table border="0" cellspacing="0" cellpadding="0" width="100%" class="information"
-        style="font-family:'Noto Sans', sans-serif, Arial, Noto; text-align: left;">
-        <tr style="background-color:#FFF">
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td class="r-space" style="height:24px">&nbsp;</td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-        <tr class="information__header" height="50" style="height:50px">
-            <td class="c-space" style="width:26px;">&nbsp;</td>
-            <td class="information__header__title"
-                style="color: #151E3B; font-size: 24px; font-weight: 300; font-family: 'Noto Sans', sans-serif, Nato; vertical-align: middle; border-bottom: 2px solid #737889;">
-                Important information
-            </td>
-            <td class="c-space" style="width:40px;">
-            </td>
-        </tr>
-
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td>
-                <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">&nbsp;</p>
-                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto; border-top: solid 1px #F3F3F3;">
-                    <tr>
-                        <td class="information__item__header baggage-allowance"
-                            style="color:#6e2d91;font-size:22px;width:95px;vertical-align:top;">
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/icon-small_baggage.png"
-                                border="0" width="80">
-                        </td>
-                        <td>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="10"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p
-                                                style="margin: 0;color: #151E3B; font-size: 16px; font-weight: 600; line-height: 20px; font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                                Carry-On Baggage Allowance​</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="6"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <span style="margin: 0; padding: 0; font-size: 14px; line-height: 18px;">
-                                Each passenger is only allowed to carry the corresponding Carry On Baggage for boarding
-                                as detailed below, with a total weight not exceeding <strong>7 kg (15.4 lbs.)</strong>.
-                                The Small Personal Item must not exceed the dimensions of <strong>40 (L) x 25 (W) x 20
-                                    (H) cm</strong> and must fit under the seat in front of you. The Cabin Baggage
-                                (including wheels, handles and side pockets) must not exceed the dimensions of
-                                <strong>56 (L) x 36 (W) x 23 (H) cm</strong>. Please note that all purchases made in the
-                                airport’s restricted area will be considered Carry On Baggage. Any excess items will
-                                incur <a href="https://www.hkexpress.com/Plan/Extras/Baggage"
-                                    style="color: #000">additional fees</a> and must be checked in.
-                                <br><br>
-                                Ultra Lite: 1 x Small Personal Item <br>
-                                Lite: 1 x Small Personal Item and 1 x Cabin Baggage<br>
-                                Essential: 1 x Small Personal Item.<br>
-                                Max: 1 x Small Personal Item and 1 x Cabin Baggage
-                                <br><br>
-                                For passengers who have booked tickets before 8 May 2024, please refer to your itinerary
-                                confirmation email from the initial booking for the designated Carry On Baggage
-                                Allowance or contact Customer Connect for more details.
-                            </span>
-                            <br><br>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="15"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p style="margin: 0;">
-                                                <a href="https://www.hkexpress.com/Plan/Extras/Baggagecarry-on-baggage/"
-                                                    style="color: #21B9DA; text-decoration:none; font-size: 14px;"><span
-                                                        class="link__internal__txt"
-                                                        style="color:#50bef0;text-decoration:none; font-weight: 600; font-family:'Noto Sans',sans-serif,Arial,Noto">Learn
-                                                        more <span style="font-size: 20px; font-weight: 300">&nbsp;
-                                                            &#8250;</span></span></a>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="19"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td>
-                <table cellspacing="0" cellpadding="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto; border-top: solid 1px #F3F3F3;">
-                    <tr>
-                        <td class="information__item__header baggage-allowance"
-                            style="color:#6e2d91;font-size:22px;width:95px;vertical-align:top;">
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/icon-small_online-check.png"
-                                border="0" width="80">
-                        </td>
-                        <td class="information__item__content text">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="10"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p
-                                                style="margin: 0;color: #151E3B; font-size: 16px; font-weight: 600; line-height: 20px;font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                                Online check-in</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="6"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <span style="margin: 0; padding: 0; font-size: 14px; line-height: 18px;">
-                                Online Check-in is available on selected routes only, and
-                                <strong>some of the airports may still require you to visit the
-                                    check-in counter</strong> for travel document verification
-                                and to obtain a printed boarding pass before proceeding to
-                                immigration. It is not available for bookings with infants and
-                                Customers that require assistance too.
-                            </span>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="15"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p style="margin:0;"><a
-                                                    href="https://www.hkexpress.com/en-HK/Plan/Guideline/Online-Check-in-Methods"
-                                                    style="color: #21B9DA; text-decoration:none; font-size: 14px;"><span
-                                                        class="link__internal__txt"
-                                                        style="color:#50bef0;text-decoration:none; font-weight: 600;font-family:'Noto Sans',sans-serif,Arial,Noto">Learn
-                                                        more <span style="font-size: 20px; font-weight: 300">&nbsp;
-                                                            &#8250;</span></span></a>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="19"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td>
-                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto; border-top: solid 1px #F3F3F3;">
-                    <tr>
-                        <td class="information__item__header oounter-check-in"
-                            style="color:#6e2d91;font-size:22px;width:95px;vertical-align:top;">
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/icon-small_check-in.png"
-                                border="0" width="80">
-                        </td>
-                        <td class="information__item__content text">
-                            <!-- <td class="information__item__content text" style="color:#564f70;line-height:24px;"> -->
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="10"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p
-                                                style="margin: 0;color: #151E3B; font-size: 16px; font-weight: 600; line-height: 20px;font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                                Counter check-in</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="6"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <span style="margin: 0; padding: 0; font-size: 14px; line-height: 18px;">
-                                Check-in counters at Hong Kong International Airport open 3
-                                hours before and close <strong>1 hour</strong> before scheduled
-                                departure time. Click learn more to find check-in counter opening times for other
-                                airports.
-                            </span>
-
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="15"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p style="margin:0;">
-                                                <a href="https://www.hkexpress.com/Plan/Guideline/Airport-Check-in-Timetable/?utm_campaign=wci&utm_source=sendgrid&utm_medium=email&utm_content=en-us_countercheckin"
-                                                    style="color: #21B9DA; text-decoration:none; font-size: 14px;"><span
-                                                        class="link__internal__txt"
-                                                        style="color:#50bef0;text-decoration:none; font-weight: 600;font-family:'Noto Sans',sans-serif,Arial,Noto">Learn
-                                                        more <span style="font-size: 20px; font-weight: 300">&nbsp;
-                                                            &#8250;</span></span></a>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="19"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td>
-                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto; border-top: solid 1px #F3F3F3;">
-                    <tr>
-                        <td class="information__item__header oounter-check-in"
-                            style="color:#6e2d91;font-size:22px;width:95px;vertical-align:top;">
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/icons/icon-small_queue.png"
-                                width="80" border="0">
-                        </td>
-                        <td class="information__item__content text">
-                            <!-- <td class="information__item__content text" style="color:#564f70;line-height:24px;"> -->
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="10"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p
-                                                style="margin: 0;color: #151E3B; font-size: 16px; font-weight: 600; line-height: 20px;font-family:'Noto Sans',sans-serif,Arial,Noto">
-                                                Boarding</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="6"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <span style="margin: 0; padding: 0; font-size: 14px; line-height: 18px;">
-                                Customers are reminded to arrive at the boarding gate at least
-                                <strong>40 minutes</strong> before departure for boarding.
-                                Boarding Gate will close <strong>20 minutes</strong> before
-                                departure.
-                            </span>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td height="15"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p style="margin: 0;">
-                                                <a href="https://www.hkexpress.com/en-hk"
-                                                    style="color: #21B9DA; text-decoration:none; font-size: 14px;"><span
-                                                        class="link__internal__txt"
-                                                        style="color:#50bef0;text-decoration:none; font-weight: 600;font-family:'Noto Sans',sans-serif,Arial,Noto">Learn
-                                                        more <span style="font-size: 20px; font-weight: 300">&nbsp;
-                                                            &#8250;</span></span></a>
-                                            </p>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td height="19"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-        {{#or BookingInfo.HasFerryRoute BookingInfo.HasBusRoute}}
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td class="r-space" style="height:24px">&nbsp;</td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-        {{/or}}
-
-        {{#or BookingInfo.HasFerryRoute BookingInfo.HasBusRoute}}
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td>
-                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-                    <tr>
-                        <td class="information__item__content text" style="color:#564f70;line-height:24px">
-                            <strong>Connecting to/from the Greater Bay Area</strong><br>
-                            <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                Before proceeding to the SkyPier Terminal Ferry or SkyPier
-                                Terminal Transfer Coach Transfer, please collect your Ferry
-                                or
-                                SkyPier Terminal Transfer Coach ticket at the Transfer Desk
-                                E2
-                                upon arrival at Hong Kong International Airport. Please
-                                present
-                                this booking confirmation, together with the boarding pass
-                                and
-                                travel documents for the ticket collection.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="information__item__content text" style="color:#564f70;line-height:24px">
-                            <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                We act as agent for Chu Kong Passenger Transport Co. Ltd
-                                (“CKS”)
-                                in the sale and promotion of tickets for ferry or SkyPier
-                                Terminal Transfer Coach transfer services.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td>
-                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-                    <tr>
-                        <td class="information__item__content text" style="color:#564f70;line-height:24px">
-                            <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                If you travel with CKS’s operated ferry or SkyPier Terminal
-                                Transfer Coach transfer services, your contract for the
-                                ferry or
-                                SkyPier Terminal Transfer Coach transfer services is with
-                                CKS
-                                and is governed by <a target="_blank" href={{BookingInfo.TermsAndConditionOfCksUrl}}
-                                    style="color:#50bef0;text-decoration:none">CKS's
-                                    Terms and Conditions</a> as set out on CKS's website at the
-                                time
-                                the booking is made.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td>
-                <table border="0" cellspacing="0" cellpadding="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-                    <tr>
-                        <td class="information__item__content text" style="color:#564f70;line-height:24px">
-                            <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">
-                                Visit <a target="_blank" href={{BookingInfo.CksMarketingUrl}}
-                                    style="color:#50bef0;text-decoration:none">here</a>
-                                for
-                                more information about the services.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-
-        <tr>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-            <td class="r-space" style="height:24px">&nbsp;</td>
-            <td class="c-space" style="width:26px">&nbsp;</td>
-        </tr>
-
-        {{/or}}
-    </table>
-
-    {{#if BookingInfo.HasPartnersOffer}}
-    <table cellspacing="0" cellpadding="0" border="0" width="100%"
-        style="font-family:'Noto Sans',sans-serif,Arial,Noto; background-color: #F3F3F3;">
-        <tr>
-            <td height="25"></td>
-            <td height="25"></td>
-            <td height="25"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <p style="margin: 0; padding: 0; font-size: 24px; font-weight: 500">Partner
-                    Offers</p>
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <hr style="background-color:#747887">
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td height="35"></td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <table>
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; color: #000000; font-size: 18px; line-height: 25px; font-weight: 700 ">
-                                            Hong Kong Disneyland “Reignite the Magic”
-                                            Ticket and
-                                            Hotel Offer​s</p>
-                                    </td>
-                                    <td class="c-space" style="width: 20px">
-                                </tr>
-                                <tr>
-                                    <td height="4"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; font-size: 13px; color: #000000; line-height: 18px;">
-                                            Winners can enjoy free upgrade from 1-Day to
-                                            2-Day
-                                            Ticket with extra benefits and 35% Off 2
-                                            Nights Plus
-                                            Stay!​</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span
-                                            style="margin: 0; padding: 0; font-size: 13px; color: #000000; line-height: 18px;">Use
-                                            promo code:&nbsp;</span><span
-                                            style="margin: 0; padding: 0; font-size: 14px; font-weight: 600;color: #702B91; line-height: 18px;">ZK4SSFU</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="4"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p style="margin: 0; padding: 0; color: #4D4D4D; font-size: 9px">
-                                            Terms and Conditions Apply.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="10"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://www.hongkongdisneyland.com/offers-discounts/world-of-winners-ticket-and-hotel-offer?CMP=EMC-CpnWow23IntlUOwowatofr"
-                                            target="_blank"><img
-                                                src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/Learn_More_button-EN.jpg"
-                                                alt="Learn more" width="100%" border="0"></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/offers/Disneyland-EN.jpg"
-                                alt="Disneyland" width="220" height="150" border="0">
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <hr style="background-color: #702B91; opacity: .3">
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px"></td>
-            <td>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/offers/Upper_House_Hotel-EN.jpg"
-                                alt="Upper House Hotel" width="220" height="144" border="0">
-                        </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; color: #000000; font-size: 18px; line-height: 25px; font-weight: 700 ">
-                                            The Upper House Exclusive Offer</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="5"></td>
-                                </tr>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; font-size: 13px; color: #000000; line-height: 18px;">
-                                            Enjoy up to 30% discount on accommodation and a
-                                            round of complimentary champagne with dinner at
-                                            The
-                                            Continental or Salisterra.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="8"></td>
-                                </tr>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <p style="margin: 0; padding: 0; color: #4D4D4D; font-size: 9px">
-                                            Terms and Conditions Apply. Please go to our
-                                            website
-                                            for details.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="10"></td>
-                                </tr>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <a href="https://reservations.thehousecollective.com/?adult=1&arrive=2023-05-08&chain=28804&child=0&currency=HKD&depart=2023-05-09&hotel=27299&level=hotel&locale=en-US&promo=WOW&rooms=1&utm_campaign=swirehotels_hkaa_2023&utm_content=sh_hkexpress&utm_medium=banner&utm_source=referral"
-                                            target="_blank"><img
-                                                src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/Learn_More_button-EN.jpg"
-                                                alt="Learn more" width="100%" border="0"></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <hr style="background-color: #702B91; opacity: .3">
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <table>
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; color: #000000; font-size: 18px; line-height: 25px; font-weight: 700 ">
-                                            EAST Hong Kong Exclusive Offer</p>
-                                    </td>
-                                    <td class="c-space" style="width: 20px">
-                                </tr>
-                                <tr>
-                                    <td height="5"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; font-size: 13px; color: #000000; line-height: 19px;">
-                                            Enjoy a complimentary night on us with and
-                                            exclusive
-                                            50% off on semi-buffet dinner at FEAST from
-                                            Monday
-                                            to Sunday.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="5"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p style="margin: 0; padding: 0; color: #4D4D4D; font-size: 9px">
-                                            Terms and Conditions Apply. Please go to our
-                                            website
-                                            for details.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="10"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://reservations.easthotels.com/?adult=1&arrive=2023-02-22&chain=28804&child=0&currency=HKD&depart=2023-02-23&hotel=26885&level=hotel&locale=en-US&promo=WorldofWinners&rooms=1&utm_source=referral&utm_medium=banner&utm_campaign=swirehotels_hkaa_2023&utm_content=sh_hkexpress"
-                                            target="_blank"><img
-                                                src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/Learn_More_button-EN.jpg"
-                                                alt="Learn more" width="99%" border="0"></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/offers/East_Hotel-EN.jpg"
-                                alt="East Hotel" width="220" height="142" border="0">
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <hr style="background-color: #702B91; opacity: .3">
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/offers/Swire_Properties-EN.jpg"
-                                alt="Swire Properties" width="220" height="146" border="0">
-                        </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; color: #000000; font-size: 18px; line-height: 25px; font-weight: 700 ">
-                                            Shopping Privileges from Swire Properties’
-                                            Malls</p>
-                                    </td>
-                                    <td class="c-space" style="width: 10px">
-                                </tr>
-                                <tr>
-                                    <td height="4"></td>
-                                </tr>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; font-size: 13px; color: #000000; line-height: 18px;">
-                                            Enjoy up to 10% cash rebate when shopping at
-                                            Pacific
-                                            Place, Cityplaza and Citygate Outlets!</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="4"></td>
-                                </tr>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <p style="margin: 0; padding: 0; color: #4D4D4D; font-size: 9px">
-                                            T&Cs apply. Please check website for
-                                            details.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="10"></td>
-                                </tr>
-                                <tr>
-                                    <td class="c-space" style="width: 20px">
-                                    <td>
-                                        <a href="https://blob.swireproperties.com/swireproperties/mallsoffers_airlines_en.pdf"
-                                            target="_blank"><img
-                                                src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/Learn_More_button-EN.jpg"
-                                                alt="Learn more" width="99%" border="0"></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <hr style="background-color: #702B91; opacity: .3">
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td height="15"></td>
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td>
-                <table>
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; color: #000000; font-size: 18px; line-height: 25px; font-weight: 700 ">
-                                            Art and Travel Rewards from New World Group!</p>
-                                    </td>
-                                    <td class="c-space" style="width: 20px">
-                                </tr>
-                                <tr>
-                                    <td height="4"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="margin: 0; padding: 0; font-size: 13px; color: #000000; line-height: 18px;">
-                                            Enjoy New World Group’s accommodation, shopping,
-                                            dining & entertainment rewards for a
-                                            one-of-a-kind
-                                            holiday!</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="4"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p style="margin: 0; padding: 0; color: #4D4D4D; font-size: 9px">
-                                            T&Cs apply. Please check website for
-                                            details.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="10"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://artandtravelrewards.k11experience.com/en/" target="_blank"><img
-                                                src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/Learn_More_button-EN.jpg"
-                                                alt="Learn more" width="99%" border="0"></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/wow_campaign/offers/New_World_Properties-EN.jpg"
-                                alt="New World Properties" width="220" height="150" border="0">
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="c-space" style="width:26px">
-        </tr>
-        <tr>
-            <td class="c-space" style="width:26px">
-            <td height="35"></td>
-            <td class="c-space" style="width:26px">
-        </tr>
-    </table>
-    {{/if}}
-
-
-    <table cellspacing="0" cellpadding="0" border="0" width="100%"
-        style="font-family:'Noto Sans',sans-serif,Arial,Noto">
-        <tr>
-            <td>
-                <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">&nbsp;</p>
-                <table class="download-banner" cellspacing="0" cellpadding="0" border="0" width="100%"
-                    style="font-family:'Noto Sans',sans-serif,Arial,Noto;">
-                    <tr>
-                        <td class="download-banner__banner">
-                            <a href="https://www.hkexpress.com/Plan/Guideline/App-Booking?utm_campaign=itinerary&utm_source=sendgrid&utm_medium=email&utm_content=en-us_app"
-                                target="_blank"><img style="height:auto;"
-                                    src="https://edge.hkexpress.com/media/general/email/download-app-en.png"
-                                    width="100%" alt="Download the App & travel with ease">
-                            </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="r-space" style="height:24px"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="download-banner__download-btns" style="text-align:center">
-                            <a border="0" href="https://apps.apple.com/app/id1069758898"
-                                style="color:#50bef0;text-decoration:none">
-                                <img src="https://edge.hkexpress.com/static/HKE-newsletters/imgs/download_apple.png"
-                                    title="Available on the App Store" width="170" height="50"
-                                    style="display:inline-block;padding:0 5px">
-                            </a>
-                            <a border="0" href="https://play.google.com/store/apps/details?id=com.hkexpress.android"
-                                style="color:#50bef0;text-decoration:none">
-                                <img src="https://edge.hkexpress.com/static/HKE-newsletters/imgs/download_google.png"
-                                    title="Available on the Play Store" width="170" height="50"
-                                    style="display:inline-block;padding:0 5px">
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td height="30"></td>
-        </tr>
-    </table>
-
-    <table class="legal-text" style="background-color: #F3F3F3; margin: 0; padding: 0; width: 100%;">
-        <tbody style="margin: 0; padding: 0;">
-            <tr>
-                <td height="20">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr style="margin: 0; padding: 0;">
-                <td width="30" style="margin: 0; padding: 0;"></td>
-                <td style="vertical-align: middle; margin: 0; padding: 0;">
-                    <p
-                        style="margin: 0; padding: 0; color: #151E3B; font-size: 10px; line-height: 12px; font-family:'Noto Sans',sans-serif,Arial,Noto ">
-                        The content of this e-mail is considered confidential and is intended
-                        solely for the addressee(s) and access by anyone else is unauthorized.
-                        Disclosure, copying or distribution, in whole or part of this message,
-                        or taking any action based on it, is strictly prohibited. The views
-                        expressed in this e-mail are not necessarily the views of the Company,
-                        or any associated company, except where explicitly stated.
-                    </p>
-                </td>
-                <td width="30"></td>
-            </tr>
-            <tr>
-                <td height="20">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table cellspacing="0" cellpadding="0" border="0" width="100%" class="hk-footer"
-        style="font-family:'Noto Sans',sans-serif,Arial,Noto; background-color: #702B91">
-        {{#if BookingInfo.HasKORoute}}
-        <tr>
-            <td>
-                <a href="https://www.shinhwaworld.com/article.aspx?lang=KR&aid=8279" target="_blank">
-                    <img src="https://edge.hkexpress.com/static/HKE-newsletters/PromoBanners/JSW_Banner_EN.jpg"
-                        alt="JSW Banner">
-                </a>
-            </td>
-        </tr>
-        {{/if}}
-        <tr>
-            <td class="center" align="center" valign="top">
-                <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center"
-                    class="container float-center"
-                    style="background: #702B91; font-family:'Noto Sans',sans-serif,Arial,Noto; margin:0; text-align: center; width:100%;">
+                <table border="0" cellspacing="0" cellpadding="0" width="642" align="center"
+                       class="container float-center"
+                       style="Margin:0 auto;background:#fff;float:none;font-family:'Noto Sans',sans-serif,Arial,Noto;margin:0 auto;text-align:center;width:642px">
                     <tr>
                         <td class="content"
                             style="Margin:0;color:#564f70;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:16px;font-weight:400;line-height:1.1;margin:0;padding:0;text-align:left">
-                            <table cellspacing="0" cellpadding="0" border="0" width="100%" class="hk-footer"
-                                style="font-family:'Noto Sans',sans-serif,Arial,Noto">
+
+                            <table>
                                 <tr>
-                                    <td height="20"></td>
+                                    <td style="padding: 12px 12px; ">
+                                        <img src="https://edge.hkexpress.com/media/general/logo/HKE_Logo_EN_TC_RGB.svg"
+                                             width="140">
+                                    </td>
                                 </tr>
+                            </table>
+                            <table class="title-bar_wrap" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                   style="background-color: #702B91;color:#f4f4f7;font-family:'Noto Sans',sans-serif,Arial,Noto">
+                                <tr>
+                                    <td style="width:32px">&nbsp;</td>
+                                    <td class="text-general"
+                                        style="font-size:32px;color:white;font-weight:700;height:72px;text-align:left;vertical-align:middle">Payment Reminder</td>
+                                </tr>
+                            </table>
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="my-booking"
+                                   style="background-color:#fff;color:#151E3B;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:17px">
+
                                 <tr>
                                     <td>
-                                        <table align="center" style="width: 45%; height: 32px;">
-                                            <tbody>
-                                                <tr>
-                                                    <td style="width: 40px; height: 30px;">
-                                                        <a href="https://www.facebook.com/HKExpressDE" target="_blank"
-                                                            class="footer__icons__item" border="0"
-                                                            style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
-                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/facebook.png"
-                                                                width="28" height="28" title="Facebook"></a>
-                                                    </td>
-                                                    <td style="width: 40px; height: 30px;">
-                                                        <a href="https://www.instagram.com/hk_express/" target="_blank"
-                                                            class="footer__icons__item" border="0"
-                                                            style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
-                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/instagram.png"
-                                                                width="28" height="28" title="Instagram"></a>
-                                                    </td>
-                                                    <td style="width: 40px; height: 30px;"><a
-                                                            href="http://weibo.com/hkexpress" target="_blank"
-                                                            class="footer__icons__item" border="0"
-                                                            style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
-                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/weibo.png"
-                                                                width="28" height="28" title="Weibo"></a>
-                                                    </td>
-                                                    <td style="width: 40px; height: 30px;">
-                                                        <a href="https://www.hkexpress.com/en/WeChat" target="_blank"
-                                                            class="footer__icons__item" border="0"
-                                                            style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
-                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/wechat.png"
-                                                                width="28" height="28" title="Wechat"></a>
-                                                    </td>
-                                                    <td style="width: 40px; height: 30px;">
-                                                        <a href="https://www.youtube.com/channel/UCKui37050C0L5EdPiYzYZiw"
-                                                            target="_blank" class="footer__icons__item" border="0"
-                                                            style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
-                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/youtube.png"
-                                                                width="28" height="28" title="Youtube"></a>
-                                                    </td>
-                                                    <td style="width: 40px; height: 30px;">
-                                                        <a href="https://www.linkedin.com/company/hong-kong-express/mycompany/"
-                                                            target="_blank" class="footer__icons__item" border="0"
-                                                            style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
-                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/linkedin.png"
-                                                                width="28" height="28" title="Linkedin"></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%"
+                                               style="font-family:'Noto Sans',sans-serif,Arial,Noto">
+                                            <tr>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                                <td class="r-space" style="height:24px">&nbsp;</td>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                                <td class="text--purple">
+                                                    <p class="text-general" style="font-size: 18px;"><strong>Dear </strong><strong>{{last_name}} {{first_name}}</strong>, </p>
+                                                    <p class="text-general" style="font-size: 16px;">Thank you for choosing HK Express. We noticed that your booking {{sales_reference}} has an outstanding payment pending. </p>
+                                                    <p class="text-general" style="font-size: 16px;">To avoid any disruption to your journey and ensure a smooth travel experience, please click the button below to complete the payment for your extra products/services on the "Manage My Booking" page.</p>
+                                                </td>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                                <td class="r-space" style="height:24px">&nbsp;</td>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                                <td class="r-space" style="height:24px">&nbsp;</td>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                                <td style="text-align:center;vertical-align:middle;"> <button style="border-radius: 28px;"><span >Find flights</span></button></td>
+                                                <td style="text-align:center;vertical-align:middle;"><a href="{{payment_link}}" border="0">
+                                                    <img src="https://irp-uat.hkexpress.com/source/booking/CTA-button.png" border="0" style="display:inline-block;vertical-align: middle"></a>
+                                                </td>
+
+                                                <td class="c-space" style="width:26px">&nbsp;</td>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                                <td class="r-space" heigth="42" style="height:24px;">&nbsp;</td>
+                                                <td class="c-space" style="width:32px">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!--footers below -->
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                   style="font-family:'Noto Sans',sans-serif,Arial,Noto">
+                                <tr>
+                                    <td>
+                                        <p style="Margin:7px 0 7px 0;margin:7px 0 7px 0">&nbsp;</p>
+                                        <table class="download-banner" cellspacing="0" cellpadding="0" border="0"
+                                               width="100%"
+                                               style="font-family:'Noto Sans',sans-serif,Arial,Noto;">
+                                            <tr>
+                                                <td class="download-banner__banner">
+                                                    <a href="https://www.hkexpress.com/Plan/Guideline/App-Booking?utm_campaign=itinerary&utm_source=sendgrid&utm_medium=email&utm_content=en-us_app"
+                                                       target="_blank"><img style="height:auto;"
+                                                                            src="https://edge.hkexpress.com/media/general/email/download-app-en.png"
+                                                                            width="100%"
+                                                                            alt="Download the App & travel with ease">
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="r-space" style="height:24px"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="download-banner__download-btns" style="text-align:center">
+                                                    <a border="0" href="https://apps.apple.com/app/id1069758898"
+                                                       style="color:#50bef0;text-decoration:none">
+                                                        <img src="https://edge.hkexpress.com/static/HKE-newsletters/imgs/download_apple.png"
+                                                             title="Available on the App Store" width="170" height="50"
+                                                             style="display:inline-block;padding:0 5px">
+                                                    </a>
+                                                    <a border="0"
+                                                       href="https://play.google.com/store/apps/details?id=com.hkexpress.android"
+                                                       style="color:#50bef0;text-decoration:none">
+                                                        <img src="https://edge.hkexpress.com/static/HKE-newsletters/imgs/download_google.png"
+                                                             title="Available on the Play Store" width="170" height="50"
+                                                             style="display:inline-block;padding:0 5px">
+                                                    </a>
+                                                </td>
+                                            </tr>
                                         </table>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="footer__links" style="font-size:19px;text-align:center">
-                                        <a href="https://www.hkexpress.com/en/Need-help/Customer-Care" target="_blank"
-                                            style="color:#564f70;text-decoration:none"><span class="link__internal__txt"
-                                                style="color: #21B9DA; text-decoration:none; font-size: 14px; line-height: 17px; font-weight: 500">Contact
-                                                Us</span></a>
-                                        <span class="footer__links__separator"
-                                            style="color: #fff;font-weight:500;padding:0 5px; font-size: 14px">&#8226;</span>
-                                        <a href="https://www.hkexpress.com/en/Legal-and-Privacy/Privacy-Policy"
-                                            target="_blank" style="color:#564f70;text-decoration:none"><span
-                                                class="link__internal__txt"
-                                                style="color: #21B9DA; text-decoration:none; font-size: 14px; line-height: 17px; font-weight: 500">Privacy
-                                                Policy</span></a>
-                                    </td>
+                                    <td height="30"></td>
                                 </tr>
-                                <tr>
-                                    <td class="footer__text text" style="color:#fff;font-size: 10px;text-align:center">
-                                        <p>&copy;
-                                            2025 Hong Kong Express Airways Limited</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="20"></td>
-                                </tr>
-                                <!--{{#equals BookingInfo.IsHkiaPromo false}}
-                                                        <tr>
-                                                        <td style="margin: 0; Margin: 0;">
-                                                        <a style="margin: 0; Margin: 0;" href="https://healthpassport.my-doc.com/?ref=HKEMYDOC" target="_blank"><img src="https://edge.hkexpress.com/static/assets/imgs/banner-itinerary/mydoc-promo-banner/mydoc-promo_itin-email-banner_EN.jpg" width="100%" alt="Mydoc Video consultation" >
-                                                        </a>
-                                                        </td>
-                                                        </tr>
-                                                        {{/equals}} !-->
-                                <!--{{#if BookingInfo.ShowJSWBanner}}
-                                                        <tr>
-                                                        <td>
-                                                        <a href="https://www.shinhwaworld.com/article.aspx?lang=EN&aid=8344"
-                                                        target="_blank">
-                                                        <img src="https://edge.hkexpress.com/static/HKE-newsletters/PromoBanners/JSW_Banner_EN.jpg" alt="JSW Banner">
-                                                        </a>
-                                                        </td>
-                                                        </tr>
-                                                        {{/if}}!-->
                             </table>
+
+                            <table class="legal-text"
+                                   style="background-color: #F3F3F3; margin: 0; padding: 0; width: 100%;">
+                                <tbody style="margin: 0; padding: 0;">
+                                <tr>
+                                    <td height="20">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr style="margin: 0; padding: 0;">
+                                    <td width="30" style="margin: 0; padding: 0;"></td>
+                                    <td style="vertical-align: middle; margin: 0; padding: 0;">
+                                        <p
+                                                style="margin: 0; padding: 0; color: #151E3B; font-size: 10px; line-height: 12px; font-family:'Noto Sans',sans-serif,Arial,Noto ">
+                                            The content of this e-mail is considered confidential and is intended
+                                            solely for the addressee(s) and access by anyone else is unauthorized.
+                                            Disclosure, copying or distribution, in whole or part of this message,
+                                            or taking any action based on it, is strictly prohibited. The views
+                                            expressed in this e-mail are not necessarily the views of the Company,
+                                            or any associated company, except where explicitly stated.
+                                        </p>
+                                    </td>
+                                    <td width="30"></td>
+                                </tr>
+                                <tr>
+                                    <td height="20">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" class="hk-footer"
+                                   style="font-family:'Noto Sans',sans-serif,Arial,Noto; background-color: #702B91">
+
+                                <tr>
+                                    <td class="center" align="center" valign="top">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center"
+                                               class="container float-center"
+                                               style="background: #702B91; font-family:'Noto Sans',sans-serif,Arial,Noto; margin:0; text-align: center; width:100%;">
+                                            <tr>
+                                                <td class="content"
+                                                    style="Margin:0;color:#564f70;font-family:'Noto Sans',sans-serif,Arial,Noto;font-size:16px;font-weight:400;line-height:1.1;margin:0;padding:0;text-align:left">
+                                                    <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                           class="hk-footer"
+                                                           style="font-family:'Noto Sans',sans-serif,Arial,Noto">
+                                                        <tr>
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" style="width: 45%; height: 32px;">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td style="width: 40px; height: 30px;">
+                                                                            <a href="https://www.facebook.com/HKExpressDE"
+                                                                               target="_blank"
+                                                                               class="footer__icons__item" border="0"
+                                                                               style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
+                                                                                <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/facebook.png"
+                                                                                     width="28" height="28"
+                                                                                     title="Facebook"></a>
+                                                                        </td>
+                                                                        <td style="width: 40px; height: 30px;">
+                                                                            <a href="https://www.instagram.com/hk_express/"
+                                                                               target="_blank"
+                                                                               class="footer__icons__item" border="0"
+                                                                               style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
+                                                                                <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/instagram.png"
+                                                                                     width="28" height="28"
+                                                                                     title="Instagram"></a>
+                                                                        </td>
+                                                                        <td style="width: 40px; height: 30px;"><a
+                                                                                href="http://weibo.com/hkexpress"
+                                                                                target="_blank"
+                                                                                class="footer__icons__item" border="0"
+                                                                                style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
+                                                                            <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/weibo.png"
+                                                                                 width="28" height="28"
+                                                                                 title="Weibo"></a>
+                                                                        </td>
+                                                                        <td style="width: 40px; height: 30px;">
+                                                                            <a href="https://www.hkexpress.com/en/WeChat"
+                                                                               target="_blank"
+                                                                               class="footer__icons__item" border="0"
+                                                                               style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
+                                                                                <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/wechat.png"
+                                                                                     width="28" height="28"
+                                                                                     title="Wechat"></a>
+                                                                        </td>
+                                                                        <td style="width: 40px; height: 30px;">
+                                                                            <a href="https://www.youtube.com/channel/UCKui37050C0L5EdPiYzYZiw"
+                                                                               target="_blank"
+                                                                               class="footer__icons__item" border="0"
+                                                                               style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
+                                                                                <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/youtube.png"
+                                                                                     width="28" height="28"
+                                                                                     title="Youtube"></a>
+                                                                        </td>
+                                                                        <td style="width: 40px; height: 30px;">
+                                                                            <a href="https://www.linkedin.com/company/hong-kong-express/mycompany/"
+                                                                               target="_blank"
+                                                                               class="footer__icons__item" border="0"
+                                                                               style="color:#50bef0;display:inline-block;text-decoration:none; width: 40px">
+                                                                                <img src="https://edge.hkexpress.com/static/HKE-newsletters/social_icons/linkedin.png"
+                                                                                     width="28" height="28"
+                                                                                     title="Linkedin"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="footer__links"
+                                                                style="font-size:19px;text-align:center">
+                                                                <a href="https://www.hkexpress.com/en/Need-help/Customer-Care"
+                                                                   target="_blank"
+                                                                   style="color:#564f70;text-decoration:none"><span
+                                                                        class="link__internal__txt"
+                                                                        style="color: #21B9DA; text-decoration:none; font-size: 14px; line-height: 17px; font-weight: 500">Contact
+Us</span></a>
+                                                                <span class="footer__links__separator"
+                                                                      style="color: #fff;font-weight:500;padding:0 5px; font-size: 14px">&#8226;</span>
+                                                                <a href="https://www.hkexpress.com/en/Legal-and-Privacy/Privacy-Policy"
+                                                                   target="_blank"
+                                                                   style="color:#564f70;text-decoration:none"><span
+                                                                        class="link__internal__txt"
+                                                                        style="color: #21B9DA; text-decoration:none; font-size: 14px; line-height: 17px; font-weight: 500">Privacy
+Policy</span></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="footer__text text"
+                                                                style="color:#fff;font-size: 10px;text-align:center">
+                                                                <p>&copy;
+                                                                    2025 Hong Kong Express Airways Limited</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+
                         </td>
                     </tr>
                 </table>
-            </td>
-        </tr>
-    </table>
-    </td>
+            </center>
+        </td>
     </tr>
-    </table>
-    </center>
-    </td>
-    </tr>
-    </table>
-    <!-- prevent Gmail on iOS font size manipulation -->
-    <div style="display:none;white-space:nowrap;font:15px courier;color:#fff">
-        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    </div>
-</body>
+</table>
 
+</body>
 </html>
