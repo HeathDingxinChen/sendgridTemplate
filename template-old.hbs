@@ -207,19 +207,17 @@
                                                 <tr>
                                                     <td class="c-space" style="width:26px">&nbsp;</td>
                                                     <td class="text--purple">
-                                                        <p>Hi, <strong>Chen Tai Man</strong>, </p>
-                                                        <p>
-                                                            Thanks for booking your flight with HK Express. We confirm
-                                                            that
-                                                            you are travelling to
-                                                            <strong>曼谷(蘇凡納布米)</strong> on
-                                                            <strong>16th Aug
-                                                                2025</strong>,
-                                                            星期六. Here's a recap of
-                                                            your
-                                                            travel itinerary and summary
-                                                            of your payment details.
-                                                        </p>
+                                                        <p>Hi, <strong>{{FirstName}}</strong>, </p>
+                                                    <p>
+                                                        Thanks for booking your flight with HK Express. We confirm that
+                                                        you are travelling to
+                                                        <strong>{{BookingInfo.DestinationCity}}</strong> on
+                                                        <strong>{{FlightInfo.[0].DepartureDateText}}
+                                                            {{BookingInfo.DepartDateText.[0]}}</strong>,
+                                                        {{FlightInfo.[0].DepartureDayOfWeek}}. Here's a recap of your
+                                                        travel itinerary and summary
+                                                        of your payment details.
+                                                    </p>
                                                     </td>
                                                     <td class="c-space" style="width:26px">&nbsp;</td>
                                                 </tr>
@@ -244,7 +242,7 @@
                                                         Booking reference
                                                         <p class="booking-reference__number"
                                                             style="Margin: 7px 0 7px 0; color: #151E3B; font-size: 24px; line-height: 30px; font-weight: 600;">
-                                                            W6SW7M</p>
+                                                            {{BookingInfo.PNR}}</p>
                                                     </td>
                                                     <td class="c-space" style="width:26px">&nbsp;</td>
                                                 </tr>

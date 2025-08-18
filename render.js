@@ -5,7 +5,7 @@ const Handlebars = require('handlebars');
 require('./helpers')(Handlebars);
 
 // 2. 读取模板 & 数据
-const templateSource = fs.readFileSync('./template.hbs', 'utf8');
+const templateSource = fs.readFileSync('./template-new.hbs', 'utf8');
 const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
 
 // 3. 编译模板
