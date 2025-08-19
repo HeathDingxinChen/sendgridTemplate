@@ -30,7 +30,7 @@
     },
     "DeclaredCountry": null,
     "DerivedCountry": null,
-    "Email": "a@b.com",
+    "Email": "****",
     "ExtrasSSR": null,
     "FirstName": "Kirsty Kong",
     "FlightInfo": [
@@ -52,8 +52,8 @@
             "FareClass": {
                 "FareClassName": "Essential"
             },
-            "FareOrBookingClass": "U",
-            "FlightNo": "UO601",
+            "FareOrBookingClass": "U | U",
+            "FlightNo": "UO601 | UO552",
             "GuestFlightInfo": "UO601",
             "IsBusRoute": false,
             "IsFerryRoute": false,
@@ -101,32 +101,24 @@
                             "Title": "Fare"
                         },
                         {
-                            "Amount": "JPY 980.00",
+                            "Amount": "JPY 2300.00",
+                            "Title": "U-Connect Fee"
+                        },
+                        {
+                            "Amount": "JPY 1960.00",
                             "Title": "JP Passenger Service Facilities Charge"
                         },
                         {
-                            "Amount": "JPY 980.00",
-                            "Title": "JP Passenger Service Facilities Charge"
-                        },
-                        {
-                            "Amount": "JPY 6900.00",
+                            "Amount": "JPY 9900.00",
                             "Title": "Fuel Surcharge"
-                        },
-                        {
-                            "Amount": "JPY 1210.00",
-                            "Title": "Airport Construction Fee"
                         },
                         {
                             "Amount": "JPY 1200.00",
                             "Title": "HKG Security Charge"
                         },
                         {
-                            "Amount": "JPY 3000.00",
-                            "Title": "Fuel Surcharge"
-                        },
-                        {
-                            "Amount": "JPY 2300.00",
-                            "Title": "U-Connect Fee"
+                            "Amount": "JPY 1210.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
                             "Amount": "JPY 1000.00",
@@ -165,16 +157,16 @@
                             "Title": "Fare"
                         },
                         {
-                            "Amount": "JPY 1560.00",
-                            "Title": "Airport Construction Fee"
+                            "Amount": "JPY 3000.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
                             "Amount": "JPY 1200.00",
                             "Title": "HKG Security Charge"
                         },
                         {
-                            "Amount": "JPY 3000.00",
-                            "Title": "Fuel Surcharge"
+                            "Amount": "JPY 1560.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
                             "Amount": "JPY 2460.00",
@@ -212,32 +204,24 @@
                             "Title": "Fare"
                         },
                         {
-                            "Amount": "JPY 490.00",
+                            "Amount": "JPY 2300.00",
+                            "Title": "U-Connect Fee"
+                        },
+                        {
+                            "Amount": "JPY 1470.00",
                             "Title": "JP Passenger Service Facilities Charge"
                         },
                         {
-                            "Amount": "JPY 980.00",
-                            "Title": "JP Passenger Service Facilities Charge"
-                        },
-                        {
-                            "Amount": "JPY 6900.00",
+                            "Amount": "JPY 9900.00",
                             "Title": "Fuel Surcharge"
-                        },
-                        {
-                            "Amount": "JPY 1210.00",
-                            "Title": "Airport Construction Fee"
                         },
                         {
                             "Amount": "JPY 1200.00",
                             "Title": "HKG Security Charge"
                         },
                         {
-                            "Amount": "JPY 3000.00",
-                            "Title": "Fuel Surcharge"
-                        },
-                        {
-                            "Amount": "JPY 2300.00",
-                            "Title": "U-Connect Fee"
+                            "Amount": "JPY 1210.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
                             "Amount": "JPY 1000.00",
@@ -271,16 +255,16 @@
                             "Title": "Fare"
                         },
                         {
-                            "Amount": "JPY 1560.00",
-                            "Title": "Airport Construction Fee"
+                            "Amount": "JPY 3000.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
                             "Amount": "JPY 1200.00",
                             "Title": "HKG Security Charge"
                         },
                         {
-                            "Amount": "JPY 3000.00",
-                            "Title": "Fuel Surcharge"
+                            "Amount": "JPY 1560.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
                             "Amount": "JPY 0.00",
@@ -307,15 +291,6 @@
         {
             "FirstName": "kir",
             "ItineraryJourneyInfo": [
-                {
-                    "PaymentDetails": [
-                        {
-                            "Amount": "JPY 10800.00",
-                            "Title": "Fare"
-                        }
-                    ],
-                    "TripType": "Departure"
-                },
                 {
                     "PaymentDetails": [
                         {
