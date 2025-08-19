@@ -1,506 +1,367 @@
 {
-    "Email": "a@b.com",
-    "FirstName": "Chen Tai Man",
-    "LastName": "adt",
-    "DerivedCountry": null,
-    "DeclaredCountry": null,
-    "LanguageCode": null,
-    "JourneysWCI": null,
     "BookingInfo": {
-        "HeroBannerPictureUrl": "https://edge.hkexpress.com/media/itineraryemail/Itinerary-email-banner_642x321_bangkok.jpg",
-        "DestinationCity": "曼谷(蘇凡納布米)",
         "DepartDateText": [
             "2025",
             "8",
-            "16"
+            "23"
         ],
-        "hoursDiffBetweenCreationAndDeparture": 94,
-        "PNR": "W6SW7M",
+        "DestinationCity": "Da Nang",
+        "HasBusRoute": false,
+        "HasFerryRoute": false,
+        "HasKORoute": null,
+        "HasPartnersOffer": false,
+        "HeroBannerPictureUrl": "https://edge.hkexpress.com/media/itineraryemail/Itinerary-email-banner_642x321_danang.jpg",
+        "HideTotalCost": false,
+        "IsFourSegmentBooking": false,
+        "IsHkiaPromo": false,
+        "IsOneSegmentBooking": false,
+        "IsThreeSegmentBooking": true,
+        "IsTwoSegmentBooking": false,
         "IsWowPromotion": false,
+        "ItineraryJourneyInfo": null,
+        "MyUoMemberDiscount": null,
+        "PNR": "W39MWL",
+        "ShowCarbonOffsetFees": true,
+        "TermsAndConditionOfCksUrl": null,
         "WowPromotionType": "",
         "WowPromotionVersion": "0",
-        "IsOneSegmentBooking": false,
-        "ItinerarySegmentInfo": null,
-        "ShowCarbonOffsetFees": true,
-        "IsTwoSegmentBooking": false,
-        "IsThreeSegmentBooking": false,
-        "IsFourSegmentBooking": true,
-        "HideTotalCost": false,
-        "IsHkiaPromo": false,
-        "Fares": "CNY 1795.63",
-        "Fees": "CNY 723.00",
-        "CheckedBaggageFees": "CNY 600.00",
-        "CarryOnBaggageFees": "NA",
-        "MealsFees": "NA",
-        "SeatFees": "CNY 380.00",
-        "InsuranceFees": "NA",
-        "ConvenienceFees": "CNY 172.00",
-        "ChangeFees": "NA",
-        "UFirstFees": "NA",
-        "TravelSimFees": "NA",
-        "CarbonOffsetFees": "CNY 34.13",
-        "SmsFees": "CNY 7.31",
-        "SportEquipmentFees": "NA",
-        "FuelSurcharge": "CNY 562.32",
-        "SpoilageFee": "NA",
-        "MyUoMemberDiscount": null,
-        "HasFerryRoute": false,
-        "HasBusRoute": false,
-        "TermsAndConditionOfCksUrl": null,
         "hasHKGArrival": null,
-        "HasPartnersOffer": false,
-        "HasKORoute": null
+        "hoursDiffBetweenCreationAndDeparture": 106
     },
+    "DeclaredCountry": null,
+    "DerivedCountry": null,
+    "Email": "a@b.com",
+    "ExtrasSSR": null,
+    "FirstName": "Kirsty Kong",
     "FlightInfo": [
         {
-            "TripType": "Departure",
-            "FareClassName": "Ultra Lite",
-            "FareOrBookingClass": "U",
-            "DepartureDateText": "16th Aug",
-            "DepartureDayOfWeek": "星期六",
-            "DepartCode": "HKG",
-            "FlightNo": "UO235",
-            "IsFerryRoute": false,
-            "IsBusRoute": false,
-            "ArriveCode": "BKK",
-            "DepartTime": "02:40",
-            "DepartDate": "1st Mar 2024,Fri",
-            "DepartCity": "Hong Kong International Airport Terminal 1",
-            "DepartureTerminal": null,
+            "ArrivalTerminal": "Terminal 2",
+            "ArriveCity": "Da Nang International Airport",
+            "ArriveCode": "DAD",
+            "ArriveDate": "24 Aug, 2025, Sun",
+            "ArriveOperatedByNote": null,
+            "ArriveTime": "09:20",
+            "DepartCity": "Fukuoka International Airport",
+            "DepartCode": "FUK",
+            "DepartDate": "23 Aug, 2025, Sat",
             "DepartOperatedByNote": null,
-            "ArriveTime": "09:40",
-            "ArriveDate": "1st Mar 2024,Fri",
-            "ArriveCity": "Tokyo Narita International Airport Terminal 2",
-            "ArrivalTerminal": null,
-            "ArriveOperatedByNote": null
+            "DepartTime": "12:55",
+            "DepartureDateText": "23rd Aug",
+            "DepartureDayOfWeek": "Saturday",
+            "DepartureTerminal": "Terminal I",
+            "FareClass": {
+                "FareClassName": "Essential"
+            },
+            "FareOrBookingClass": "U",
+            "FlightNo": "UO601",
+            "GuestFlightInfo": "UO601",
+            "IsBusRoute": false,
+            "IsFerryRoute": false,
+            "TripType": "Departure"
         },
         {
-            "TripType": "Return",
-            "FareClassName": "Max",
-            "FareOrBookingClass": "U",
-            "DepartureDateText": "23rd Aug",
-            "DepartureDayOfWeek": "星期六",
-            "DepartCode": "BKK",
-            "FlightNo": "UO701",
-            "IsFerryRoute": false,
-            "IsBusRoute": false,
-            "ArriveCode": "PKX",
-            "DepartTime": "10:15",
-            "DepartDate": "6th Mar 2024,Wed",
-            "DepartCity": "Tokyo Narita International Airport Terminal 2",
-            "DepartureTerminal": null,
-            "DepartOperatedByNote": null,
-            "ArriveTime": "01:40",
-            "ArriveDate": "7th Mar 2024,Thu",
-            "ArriveCity": "Hong Kong International Airport Terminal 1",
             "ArrivalTerminal": null,
-            "ArriveOperatedByNote": null
+            "ArriveCity": "Hualien Airport",
+            "ArriveCode": "HUN",
+            "ArriveDate": "31 Aug, 2025, Sun",
+            "ArriveOperatedByNote": null,
+            "ArriveTime": "19:55",
+            "DepartCity": "Hong Kong International Airport",
+            "DepartCode": "HKG",
+            "DepartDate": "31 Aug, 2025, Sun",
+            "DepartOperatedByNote": null,
+            "DepartTime": "17:55",
+            "DepartureDateText": "31st Aug",
+            "DepartureDayOfWeek": "Sunday",
+            "DepartureTerminal": "Terminal 1",
+            "FareClass": {
+                "FareClassName": "Max"
+            },
+            "FareOrBookingClass": "Y",
+            "FlightNo": "UO152",
+            "GuestFlightInfo": "UO152",
+            "IsBusRoute": false,
+            "IsFerryRoute": false,
+            "TripType": "Return"
         }
     ],
     "HasNGBDestination": null,
+    "InnityBanner": null,
+    "JourneysWCI": null,
+    "LanguageCode": null,
+    "LastName": "Kong",
     "Passengers": [
         {
-            "Title": "Mr",
-            "FirstName": "Chen",
-            "LastName": "Tai Man",
+            "FirstName": "Kirsty",
             "ItineraryJourneyInfo": [
                 {
-                    "TripType": "Departure",
-                    "GuestFlightInfo": "UO235",
-                    "FareClass": {
-                        "FareClassName": "隨心飛"
-                    },
                     "PaymentDetails": [
                         {
-                            "Title": "Fare",
-                            "Item": [],
-                            "Amount": "HKD 100"
+                            "Amount": "JPY 11820.00",
+                            "Title": "Fare"
                         },
                         {
-                            "Title": "Fuel Surcharge",
-                            "Item": [],
-                            "Amount": "HKD 120"
+                            "Amount": "JPY 980.00",
+                            "Title": "JP Passenger Service Facilities Charge"
                         },
                         {
-                            "Title": "Airport Construction Fee",
-                            "Item": [],
-                            "Amount": "HKD 150"
+                            "Amount": "JPY 980.00",
+                            "Title": "JP Passenger Service Facilities Charge"
                         },
                         {
-                            "Title": "HK Air Passenger Departure Tax",
-                            "Item": [],
-                            "Amount": "HKD120"
+                            "Amount": "JPY 6900.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
-                            "Title": "HKG Security Charge",
-                            "Item": [],
-                            "Amount": "HKD90"
+                            "Amount": "JPY 1210.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
-                            "Title": "Carry On Baggage: Small Personal Item",
-                            "Item": [],
-                            "Amount": "HKD 0"
+                            "Amount": "JPY 1200.00",
+                            "Title": "HKG Security Charge"
                         },
                         {
-                            "Title": "Checked Baggage",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 3000.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
-                            "Title": "Sport Equipment",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 2300.00",
+                            "Title": "U-Connect Fee"
                         },
                         {
-                            "Title": "Seat selection",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 1000.00",
+                            "Title": "Japan International Tourist Tax"
                         },
                         {
-                            "Title": "U-First",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 2460.00",
+                            "Title": "HK Air Passenger Departure Tax"
                         },
                         {
-                            "Title": "Meals",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 0.00",
+                            "Item": "Small Personal Item",
+                            "Title": "Carry On Baggage"
                         },
                         {
-                            "Title": "Travel Data Sim Card",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 12000.00",
+                            "Item": "20kg baggage (1 piece),20kg baggage (1 piece)",
+                            "Title": "Checked Baggage"
+                        },
+                        {
+                            "Amount": "JPY 2000.00",
+                            "Title": "U-First"
+                        },
+                        {
+                            "Amount": "JPY 1200.00",
+                            "Item": "Signature Hainanese Chicken Rice",
+                            "Title": "Meal"
                         }
                     ],
-                    "FareOrBookingClass": "U",
-                    "Meal": "NA",
-                    "Insurance": "NA",
-                    "Seat": "2A",
-                    "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
-                    "CarryOnBaggage": "1 x 隨身物品",
-                    "SportsEquipment": "NA",
-                    "UFirst": "NA",
-                    "TravelSim": "NA",
-                    "CarbonOffset": "是",
-                    "Fare": "HKD 100",
-                    "FuelSurcharge": "HKD 120",
-                    "AirportConstructionFee": "HKD 150",
-                    "HKAirPassengerDepartureTax": "HKD 100",
-                    "HKGSecurityCharge": "HKD 50",
-                    "MealFees": "HKD 0",
-                    "CarryOnBaggageFees": "HKD 0",
-                    "CheckedBaggageFees": "HKD 0",
-                    "SportsEquipmentFees": "HKD 0",
-                    "SeatFees": "HKD 0",
-                    "UFirstFees": "HKD 0",
-                    "TravelSimFees": "HKD 0"
+                    "TripType": "Departure"
                 },
                 {
-                    "TripType": "Return",
-                    "GuestFlightInfo": "UO704",
-                    "FareClass": {
-                        "FareClassName": "隨心飛"
-                    },
                     "PaymentDetails": [
                         {
-                            "Title": "Fare",
-                            "Item": "",
-                            "Amount": "HKD 400"
+                            "Amount": "JPY 43750.00",
+                            "Title": "Fare"
                         },
                         {
-                            "Title": "Fuel Surcharge",
-                            "Item": "",
-                            "Amount": "HKD150"
+                            "Amount": "JPY 1560.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
-                            "Title": "HK Air Passenger Departure Tax",
-                            "Item": "",
-                            "Amount": "HKD120"
+                            "Amount": "JPY 1200.00",
+                            "Title": "HKG Security Charge"
                         },
                         {
-                            "Title": "HKG Security Charge",
-                            "Item": "",
-                            "Amount": "HKD55"
+                            "Amount": "JPY 3000.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
-                            "Title": "Airport Construction Fee",
-                            "Item": "",
-                            "Amount": "HKD90"
+                            "Amount": "JPY 2460.00",
+                            "Title": "HK Air Passenger Departure Tax"
                         },
                         {
-                            "Title": "Carry On Baggage: Small Personal Item, Cabin Baggage",
-                            "Item": "",
-                            "Amount": "HKD100"
+                            "Amount": "JPY 0.00",
+                            "Item": "Small Personal Item,Cabin Baggage (Included)",
+                            "Title": "Carry On Baggage"
                         },
                         {
-                            "Title": "Checked Baggage: 32kg, 32kg",
-                            "Item": "",
-                            "Amount": "HKD420"
+                            "Amount": "JPY 0.00",
+                            "Item": "32kg baggage (1 piece)",
+                            "Title": "Checked Baggage"
                         },
                         {
-                            "Title": "Sport Equipment",
-                            "Item": "",
-                            "Amount": "HKD320"
-                        },
-                        {
-                            "Title": "Seat selection: 1A",
-                            "Item": "",
-                            "Amount": "HKD210"
-                        },
-                        {
-                            "Title": "U-First",
-                            "Item": "",
-                            "Amount": "HKD50"
-                        },
-                        {
-                            "Title": "Meals: Meatballs with Creamy Mashed Potatoes, Truffle Mushroom Pasta",
-                            "Item": "",
-                            "Amount": "HKD110"
-                        },
-                        {
-                            "Title": "Travel Data Sim Card",
-                            "Item": "",
-                            "Amount": "HKD80"
+                            "Amount": "JPY 1800.00",
+                            "Item": "3C",
+                            "Title": "Seat Selection"
                         }
                     ],
-                    "FareOrBookingClass": "U",
-                    "Meal": "NA",
-                    "Insurance": "NA",
-                    "Seat": "2A",
-                    "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
-                    "CarryOnBaggage": "1 x 隨身物品",
-                    "SportsEquipment": "NA",
-                    "UFirst": "NA",
-                    "TravelSim": "NA",
-                    "CarbonOffset": "是",
-                    "Fare": "HKD 100",
-                    "FuelSurcharge": "HKD 120",
-                    "AirportConstructionFee": "HKD 150",
-                    "HKAirPassengerDepartureTax": "HKD 100",
-                    "HKGSecurityCharge": "HKD 50",
-                    "CarryOnBaggageFees": "HKD 0",
-                    "CheckedBaggageFees": "HKD 0",
-                    "SportsEquipmentFees": "HKD 0",
-                    "SeatFees": "HKD 0",
-                    "UFirstFees": "HKD 0",
-                    "TravelSimFees": "HKD 0"
+                    "TripType": "Return"
                 }
-            ]
+            ],
+            "LastName": "Kong",
+            "Title": "Ms"
         },
         {
-            "Title": "Mr",
-            "FirstName": "Chen",
-            "LastName": "Siu Sum",
+            "FirstName": "boy",
             "ItineraryJourneyInfo": [
                 {
-                    "TripType": "Departure",
-                    "GuestFlightInfo": "UO235",
-                    "FareClass": {
-                        "FareClassName": "隨心飛"
-                    },
                     "PaymentDetails": [
                         {
-                            "Title": "Fare",
-                            "Item": [],
-                            "Amount": "HKD 100"
+                            "Amount": "JPY 11820.00",
+                            "Title": "Fare"
                         },
                         {
-                            "Title": "Fuel Surcharge",
-                            "Item": [],
-                            "Amount": "HKD 120"
+                            "Amount": "JPY 490.00",
+                            "Title": "JP Passenger Service Facilities Charge"
                         },
                         {
-                            "Title": "Airport Construction Fee",
-                            "Item": [],
-                            "Amount": "HKD 150"
+                            "Amount": "JPY 980.00",
+                            "Title": "JP Passenger Service Facilities Charge"
                         },
                         {
-                            "Title": "HK Air Passenger Departure Tax",
-                            "Item": [],
-                            "Amount": "HKD120"
+                            "Amount": "JPY 6900.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
-                            "Title": "HKG Security Charge",
-                            "Item": [],
-                            "Amount": "HKD90"
+                            "Amount": "JPY 1210.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
-                            "Title": "Carry On Baggage: Small Personal Item",
-                            "Item": [],
-                            "Amount": "HKD 0"
+                            "Amount": "JPY 1200.00",
+                            "Title": "HKG Security Charge"
                         },
                         {
-                            "Title": "Checked Baggage",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 3000.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
-                            "Title": "Sport Equipment",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 2300.00",
+                            "Title": "U-Connect Fee"
                         },
                         {
-                            "Title": "Seat selection",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 1000.00",
+                            "Title": "Japan International Tourist Tax"
                         },
                         {
-                            "Title": "U-First",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 0.00",
+                            "Item": "Small Personal Item",
+                            "Title": "Carry On Baggage"
                         },
                         {
-                            "Title": "Meals",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 0.00",
+                            "Item": "20kg baggage (1 piece)",
+                            "Title": "Checked Baggage"
                         },
                         {
-                            "Title": "Travel Data Sim Card",
-                            "Item": [],
-                            "Amount": "NA"
+                            "Amount": "JPY 12400.00",
+                            "Title": "Travel Data Sim Card"
+                        },
+                        {
+                            "Amount": "JPY 2000.00",
+                            "Title": "U-First"
                         }
                     ],
-                    "FareOrBookingClass": "U",
-                    "Meal": "NA",
-                    "Insurance": "NA",
-                    "Seat": "2A",
-                    "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
-                    "CarryOnBaggage": "1 x 隨身物品",
-                    "SportsEquipment": "NA",
-                    "UFirst": "NA",
-                    "TravelSim": "NA",
-                    "CarbonOffset": "是",
-                    "Fare": "HKD 100",
-                    "FuelSurcharge": "HKD 120",
-                    "AirportConstructionFee": "HKD 150",
-                    "HKAirPassengerDepartureTax": "HKD 100",
-                    "HKGSecurityCharge": "HKD 50",
-                    "MealFees": "HKD 0",
-                    "CarryOnBaggageFees": "HKD 0",
-                    "CheckedBaggageFees": "HKD 0",
-                    "SportsEquipmentFees": "HKD 0",
-                    "SeatFees": "HKD 0",
-                    "UFirstFees": "HKD 0",
-                    "TravelSimFees": "HKD 0"
+                    "TripType": "Departure"
                 },
                 {
-                    "TripType": "Return",
-                    "GuestFlightInfo": "UO704",
-                    "FareClass": {
-                        "FareClassName": "隨心飛"
-                    },
                     "PaymentDetails": [
                         {
-                            "Title": "Fare",
-                            "Item": "",
-                            "Amount": "HKD 400"
+                            "Amount": "JPY 43750.00",
+                            "Title": "Fare"
                         },
                         {
-                            "Title": "Fuel Surcharge",
-                            "Item": "",
-                            "Amount": "HKD150"
+                            "Amount": "JPY 1560.00",
+                            "Title": "Airport Construction Fee"
                         },
                         {
-                            "Title": "HK Air Passenger Departure Tax",
-                            "Item": "",
-                            "Amount": "HKD120"
+                            "Amount": "JPY 1200.00",
+                            "Title": "HKG Security Charge"
                         },
                         {
-                            "Title": "HKG Security Charge",
-                            "Item": "",
-                            "Amount": "HKD55"
+                            "Amount": "JPY 3000.00",
+                            "Title": "Fuel Surcharge"
                         },
                         {
-                            "Title": "Airport Construction Fee",
-                            "Item": "",
-                            "Amount": "HKD90"
+                            "Amount": "JPY 0.00",
+                            "Item": "Small Personal Item,Cabin Baggage (Included)",
+                            "Title": "Carry On Baggage"
                         },
                         {
-                            "Title": "Carry On Baggage: Small Personal Item, Cabin Baggage",
-                            "Item": "",
-                            "Amount": "HKD100"
+                            "Amount": "JPY 0.00",
+                            "Item": "32kg baggage (1 piece)",
+                            "Title": "Checked Baggage"
                         },
                         {
-                            "Title": "Checked Baggage: 32kg, 32kg",
-                            "Item": "",
-                            "Amount": "HKD420"
-                        },
-                        {
-                            "Title": "Sport Equipment",
-                            "Item": "",
-                            "Amount": "HKD320"
-                        },
-                        {
-                            "Title": "Seat selection: 1A",
-                            "Item": "",
-                            "Amount": "HKD210"
-                        },
-                        {
-                            "Title": "U-First",
-                            "Item": "",
-                            "Amount": "HKD50"
-                        },
-                        {
-                            "Title": "Meals: Meatballs with Creamy Mashed Potatoes, Truffle Mushroom Pasta",
-                            "Item": "",
-                            "Amount": "HKD110"
-                        },
-                        {
-                            "Title": "Travel Data Sim Card",
-                            "Item": "",
-                            "Amount": "HKD80"
+                            "Amount": "JPY 0.00",
+                            "Item": "3B",
+                            "Title": "Seat Selection"
                         }
                     ],
-                    "FareOrBookingClass": "U",
-                    "Meal": "NA",
-                    "Insurance": "NA",
-                    "Seat": "2A",
-                    "CheckedBaggage": "2 x 20kg 寄艙行李（一件）",
-                    "CarryOnBaggage": "1 x 隨身物品",
-                    "SportsEquipment": "NA",
-                    "UFirst": "NA",
-                    "TravelSim": "NA",
-                    "CarbonOffset": "是",
-                    "Fare": "HKD 100",
-                    "FuelSurcharge": "HKD 120",
-                    "AirportConstructionFee": "HKD 150",
-                    "HKAirPassengerDepartureTax": "HKD 100",
-                    "HKGSecurityCharge": "HKD 50",
-                    "CarryOnBaggageFees": "HKD 0",
-                    "CheckedBaggageFees": "HKD 0",
-                    "SportsEquipmentFees": "HKD 0",
-                    "SeatFees": "HKD 0",
-                    "UFirstFees": "HKD 0",
-                    "TravelSimFees": "HKD 0"
+                    "TripType": "Return"
                 }
-            ]
+            ],
+            "LastName": "test",
+            "Title": "Master"
+        },
+        {
+            "FirstName": "kir",
+            "ItineraryJourneyInfo": [
+                {
+                    "PaymentDetails": [
+                        {
+                            "Amount": "JPY 10800.00",
+                            "Title": "Fare"
+                        }
+                    ],
+                    "TripType": "Departure"
+                },
+                {
+                    "PaymentDetails": [
+                        {
+                            "Amount": "JPY 10800.00",
+                            "Title": "Fare"
+                        }
+                    ],
+                    "TripType": "Departure"
+                },
+                {
+                    "PaymentDetails": [
+                        {
+                            "Amount": "JPY 5400.00",
+                            "Title": "Fare"
+                        }
+                    ],
+                    "TripType": "Return"
+                }
+            ],
+            "LastName": "test",
+            "Title": "Master"
         }
     ],
     "PaymentInfo": {
-        "PaymentAmtTotal": "HKD 971.00",
+        "OtherFees": {
+            "CarbonOffsetFee": "NA",
+            "ChangeFees": "NA",
+            "InsuranceFee": "NA",
+            "NonRefundableFareDifferenceFee": "NA",
+            "ReservationFee": "NA",
+            "SmsItineraryFee": "NA"
+        },
+        "PaymentAmtTotal": "JPY 257690.00",
         "PaymentDetails": [
             {
-                "PaymentType": "VISA",
-                "PaymentDate": "12/08/2025 12:04 HK Time",
+                "ExchangeRate": null,
                 "PaymentAmount": null,
+                "PaymentDate": "19/08/2025 11:43 JP Time",
+                "PaymentType": "Visa",
+                "PricingCurrency": "JPY 257690.00",
                 "Status": "Approved",
-                "PricingCurrency": "HKD 971.00",
-                "TransactionCurrency": "HKD 971.00",
-                "ExchangeRate": null
+                "TransactionCurrency": "JPY 257690.00"
             }
-        ],
-        "OtherFees": {
-            "InsuranceFee": "HKD 300",
-            "CarbonOffsetFee": "HKD 300",
-            "SmsItineraryFee": "HKD 8",
-            "NonRefundableFareDifferenceFee": "HKD 100",
-            "ReservationFee": "NA",
-            "ChangeFees": "HKD 580"
-        }
+        ]
     },
-    "ExtrasSSR": null,
-    "InnityBanner": null,
-    "hasSpecialAssistance": null,
+    "hasHKGArrival": null,
     "hasJtkStation": null,
-    "hasHKGArrival": null
+    "hasSpecialAssistance": null
 }
